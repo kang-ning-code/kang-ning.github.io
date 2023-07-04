@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kang-ning-code.github.io/message/index.html</loc>
+    <loc>http://example.com/message/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/work/index.html</loc>
+    <loc>http://example.com/work/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/gallery/index.html</loc>
+    <loc>http://example.com/gallery/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/Categories/index.html</loc>
+    <loc>http://example.com/Categories/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/Tags/index.html</loc>
+    <loc>http://example.com/Tags/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/research/index.html</loc>
+    <loc>http://example.com/research/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/post/index.html</loc>
+    <loc>http://example.com/post/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/About/index.html</loc>
+    <loc>http://example.com/About/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/music/index.html</loc>
+    <loc>http://example.com/music/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/List/index.html</loc>
+    <loc>http://example.com/List/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/Link/index.html</loc>
+    <loc>http://example.com/Link/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/2023/07/04/hello-world/</loc>
+    <loc>http://example.com/2023/07/04/hello-world/</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -111,7 +111,7 @@
   
 
   <url>
-    <loc>https://kang-ning-code.github.io/</loc>
+    <loc>http://example.com/</loc>
     <lastmod>2023-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
