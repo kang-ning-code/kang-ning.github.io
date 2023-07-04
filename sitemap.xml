@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/project/post/index.html</loc>
+    <loc>https://kang-ning-code.github.io/project/work/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -29,24 +29,6 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/project/research/index.html</loc>
-    
-    <lastmod>2023-07-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kang-ning-code.github.io/project/music/index.html</loc>
-    
-    <lastmod>2023-07-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://kang-ning-code.github.io/project/Categories/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
@@ -56,7 +38,25 @@
   </url>
   
   <url>
-    <loc>https://kang-ning-code.github.io/project/messageboard/index.html</loc>
+    <loc>https://kang-ning-code.github.io/project/Tags/index.html</loc>
+    
+    <lastmod>2023-07-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kang-ning-code.github.io/project/research/index.html</loc>
+    
+    <lastmod>2023-07-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kang-ning-code.github.io/project/post/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -66,6 +66,15 @@
   
   <url>
     <loc>https://kang-ning-code.github.io/project/About/index.html</loc>
+    
+    <lastmod>2023-07-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kang-ning-code.github.io/project/music/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -84,15 +93,6 @@
   
   <url>
     <loc>https://kang-ning-code.github.io/project/Link/index.html</loc>
-    
-    <lastmod>2023-07-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kang-ning-code.github.io/project/Tags/index.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
