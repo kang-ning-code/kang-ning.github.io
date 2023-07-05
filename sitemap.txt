@@ -1,6 +1,6 @@
+http://example.com/about/index.html
 http://example.com/categories/index.html
 http://example.com/link/index.html
-http://example.com/about/index.html
 http://example.com/Tags/index-1.html
 http://example.com/message/index.html
 http://example.com/2023/07/05/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/
