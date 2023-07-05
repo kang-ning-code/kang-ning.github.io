@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>康康博客</title>
+  <title>宁康同学</title>
   
   <subtitle>当我在追光，我与光同航</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-07-05T07:56:43.342Z</updated>
+  <updated>2023-07-05T08:47:24.922Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>加密文章测试，输入test即可查看</title>
+    <link href="http://example.com/2023/07/05/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/"/>
+    <id>http://example.com/2023/07/05/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0/</id>
+    <published>2023-07-05T08:47:24.673Z</published>
+    <updated>2023-07-05T08:47:24.922Z</updated>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="ec57d015d6779b766e396c4fb925de59533b4a9c1b5d2a5ebfead5e54347c033">bd25ed9264b080267271e137e33d0ce1e1069d88f9699965ec2c8f2e4412683a11965185006bffa98a0a821510d9346f09318e6bad83c5df43f6251105f61d270c32a97bb2827cd20739af9fa6249e3505e6204e790853d1055ff147ba28e468da491a0921c539a0aade5171857db6233efc852ff230d5b1b6270021a7f2274a7a7891f11d85473690422648fdf7e8fe0bc0a35316d79978fb5a968561647a862e544a8a275bfbfa37eda4ab0cac2bdb88c71d79954054a9fbf856d5593a847b18d84dd9bc8fb2058209823dbed3087e441409a69b4c25c2c5cf16d77747cbc7fdd91266a23b65a00fd486d4159baee184bf61fa2d3e69ef266d81350bbe7174b1af7748bc94f6936c10e9682801f8d817b5a32c11ec4eb3f32e0bd159fc60cb53b54584a7fff8d537f471122361abbdfb275906ab00ea5940a5804ac8210504e37df580b831cfbedabb1109d48b8ffc6937e3cf09be0f6f9ab48035206a44c76ac8674e71b1c4768906dc8ecd897045d66bee35b7f65b5a8de9356a34261b4f1033cb02449cccf6be8d3619db390db01ed1ea6af35cb86dd2069a08b3b492857281796ca10b33aa177df898954697c34af44357d03954d15d1e489619e834c02a1e0d91eccba35d5158dd6dea84ceb408c10bb3542e01e03051bdcfd328fe83f57ec9dbb99d89be2b8e8bd5e80035c0353a0151523a077deed00f55c71b0275128ef4bab5325f92c937c73e66e36eaed23cc282eac704189e218864dcd0a47fda27dba1c8d9c0a3333290ab8a57140173d4c88268ba5d1716d6d7ca3acd0f007a12754dab090ade6686efd6225171e8b6adc731dbfbabcf01169e092255f3477d01ab93ca5570e39e4f1fcdff3756bab000545c697103ced1138200b81b5f39f703482ccec8733753f2dd39f951605f4685ad03da40dba3a82d34d448a312566f2dbc644630d13227fff9641c0b439737cacb3543423b16fd016a37610e295a586e4e012a7978ff1a16eede400a5aaadd5432106d98bf9348446a164bb6c222187f1c1f36551367b6cc15b9d2c3db1b2a0ae72e292f708f2b305ad0a250c7771f2b4b785bca41b1e72c9fad0c015748ed8e787953a427f8c1d91a8ec5bf4882aac14cb649aaeecbc1cc4091301f2b84b83761be957f00792ab7c05e962d98c7d6e78c81be29adfaf3da4bfe2408becaae3ba22ed23de78b7cf74f935e7fa33143ef8abe66d447bbf9b238bf3f6324c43b920e907def2c2e4435aa4a1081a5ac5799676c0dded94c111023a84ae305510cb797cfd7f0beef079aad5547038ce5e564123c415e8b2796e67e5bd9817bd8536319bc8828dbc40ec56fe9e38ed12e0b073b79c6bc28bae9f9e2f5e6c54bd1e8fc0a346403cd203aa2918134f53afc452595941b26f70b94aba534f6afb61f2a5319c64e2fbee5dffe058cd4ec406d0a95db4c50a06b6a3248ad0f0ccd679b63d3239b26dd486855e0e42bde32c7711487cd90a3831229b2cf8bd3aecbbca1a9060a6e930ac20a8a457779908112c8a11e14b4839a7197531395bea93983a0</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">测试加密，这里的密码是：test</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>7月份通信类会议整理</title>
