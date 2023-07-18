@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-07-10T07:28:29.189Z</updated>
+  <updated>2023-07-12T06:12:27.152Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2023/07/12/%E4%B8%89%E7%BB%B4%E7%A9%BA%E9%97%B4%E5%88%9A%E4%BD%93%E8%BF%90%E5%8A%A8/"/>
+    <id>http://example.com/2023/07/12/%E4%B8%89%E7%BB%B4%E7%A9%BA%E9%97%B4%E5%88%9A%E4%BD%93%E8%BF%90%E5%8A%A8/</id>
+    <published>2023-07-12T06:12:26.965Z</published>
+    <updated>2023-07-12T06:12:27.152Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><hr><h2 id="title：三维空间刚体运动"><a href="#title：三维空间刚体运动" class="headerlink" title="title：三维空间刚体运动"></a>title：三维空间刚体运动</h2><p>一、坐标系</p><p>有三个正交的轴组成</p><p>​构成线性空间的一组基</p><p>​左手系和右手系</p><p>二、向量以及向量的运算</p><p>点存在与三维空间</p><p>电和点可以组成向量</p><p>点本身由原点指向它的向量所描述</p><p>加减法</p><p>内积</p><p>![image-20230711214726953](C:\Users\Kang Ning\AppData\Roaming\Typora\typora-user-images\image-20230711214726953.png)</p><p>外积</p><p>![image-20230711214620685](C:\Users\Kang Ning\AppData\Roaming\Typora\typora-user-images\image-20230711214620685.png)</p><p>基本问题：</p><p>坐标系之间是如何变化的?</p><p>![image-20230711214933616](C:\Users\Kang Ning\AppData\Roaming\Typora\typora-user-images\image-20230711214933616.png)</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;js&#92;APlayer.min.js&quot; class=&quot;aplayer-se</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2023/07/10/%E8%A7%86%E8%A7%89SLAM%E2%80%94%E2%80%94%E5%88%9D%E8%AF%86SLAM%E5%AE%9E%E8%B7%B5%E9%83%A8%E5%88%86/"/>
+    <id>http://example.com/2023/07/10/%E8%A7%86%E8%A7%89SLAM%E2%80%94%E2%80%94%E5%88%9D%E8%AF%86SLAM%E5%AE%9E%E8%B7%B5%E9%83%A8%E5%88%86/</id>
+    <published>2023-07-10T14:17:31.404Z</published>
+    <updated>2023-07-10T14:17:31.627Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><hr><h2 id="title-视觉SLAM——初识SLAM实践部分"><a href="#title-视觉SLAM——初识SLAM实践部分" class="headerlink" title="title:视觉SLAM——初识SLAM实践部分"></a>title:视觉SLAM——初识SLAM实践部分</h2><h2 id="主要流程"><a href="#主要流程" class="headerlink" title="主要流程"></a>主要流程</h2><p>1、安装Ubuntu</p><p>该部分见<a href="https://zhuanlan.zhihu.com/p/355314438">博客</a></p><p>2、程序简介 </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;js&#92;APlayer.min.js&quot; class=&quot;aplayer-se</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2023/07/10/CMake%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://example.com/2023/07/10/CMake%E4%BB%8B%E7%BB%8D/</id>
+    <published>2023-07-10T14:17:24.054Z</published>
+    <updated>2023-07-10T14:17:24.310Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><hr><h2 id="title：CMake介绍"><a href="#title：CMake介绍" class="headerlink" title="title：CMake介绍"></a>title：CMake介绍</h2><p>一、CMake概述</p><p>二、Cmake的使用</p><p>1、注释</p><p>（1）行注释</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#这是一个注释</span><br></pre></td></tr></table></figure><p>（2）段注释</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#[[这是一个段注释</span></span><br><span class="line"><span class="comment">CMakeLists.tst</span></span><br><span class="line"><span class="comment">CMakeLists.tst</span></span><br><span class="line"><span class="comment">]]</span></span><br></pre></td></tr></table></figure><p>2、添加CMakeLists.txt文件</p><p>文件内容如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake_mininum_required(VERSION 3.0)#指定使用的cmake最低版本</span><br><span class="line">project(CALC)#定义工程名称，并指定可用的版本、工程描述、web主页地址、支持的语言，如果不需要的这些都可以需略，只要写出工程名就行</span><br><span class="line">add_executable(可执行程序名 源文件名称)#定义工程会生成一个可执行程序，源文件名可以是多个，用空格或者;间隔</span><br></pre></td></tr></table></figure><p>3、执行CMake命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake </span><br><span class="line">cmake CMakeLists.txt文件路径</span><br><span class="line">make </span><br></pre></td></tr></table></figure><p>4、set的使用</p><p>(1)定义变量的名字</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#SET 指令语法</span></span><br><span class="line"><span class="comment">#  []中的参数为可选择项，</span></span><br><span class="line"><span class="keyword">SET</span>(VAR [VALUE] [CACHE TYPE DOCSTRING []])</span><br></pre></td></tr></table></figure><p>(2)指定使用的C++标准</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD <span class="number">11</span>)</span><br></pre></td></tr></table></figure><p>(3)指定输出的路径</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span>(HOME /home/robin/Linux/Sort)</span><br><span class="line"><span class="keyword">set</span>(EXECUTABLE_OUTPUT_PATH <span class="variable">$&#123;HOME&#125;</span>/bin)</span><br><span class="line"><span class="comment"># $&#123; &#125;表示取出变量的值</span></span><br></pre></td></tr></table></figure><p>5、搜索文件</p><p>（1）aux_source_directory</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">aux_source_directory</span>(&lt;dir&gt; &lt;variable&gt;)</span><br></pre></td></tr></table></figure><pre><code>- dir:要搜索的目录- variable：需要存储的变量</code></pre><p>（2）file</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">file</span>(GLOB/GLOB_RECURSE 变量名 要搜索的文件路径和文件类型)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;js&#92;APlayer.min.js&quot; class=&quot;aplayer-se</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>计算视觉SLAM——引言</title>
