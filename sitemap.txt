@@ -1,3 +1,4 @@
+http://example.com/README.html
 http://example.com/resume/index.html
 http://example.com/about/index.html
 http://example.com/2023/07/19/%E8%AE%BA%E6%96%87%E7%9B%B2%E5%AE%A1%E8%AF%84%E8%AF%AD/
