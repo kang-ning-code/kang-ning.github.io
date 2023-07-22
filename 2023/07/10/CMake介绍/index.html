@@ -6,16 +6,15 @@
     <meta charset="utf-8">
     <meta name="keywords" content="宁康同学">
     <meta name="description" content="
-title：CMake介绍一、CMake概述
-二、Cmake的使用
+# title：CMake 介绍
+一、CMake 概述
+二、Cmake 的使用
 1、注释
 （1）行注释
 1#这是一个注释
-
 （2）段注释
 1234#[[这是一个段注释CMakeLists.tstCMakeLists.tst]]
-
-2、添加CMakeL">
+2、添加 C">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -673,42 +672,34 @@ title：CMake介绍一、CMake概述
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <hr>
-<h2 id="title：CMake介绍"><a href="#title：CMake介绍" class="headerlink" title="title：CMake介绍"></a>title：CMake介绍</h2><p>一、CMake概述</p>
-<p>二、Cmake的使用</p>
+<h2 id="titlecmake介绍"><a class="markdownIt-Anchor" href="#titlecmake介绍">#</a> title：CMake 介绍</h2>
+<p>一、CMake 概述</p>
+<p>二、Cmake 的使用</p>
 <p>1、注释</p>
 <p>（1）行注释</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#这是一个注释</span><br></pre></td></tr></table></figure>
-
 <p>（2）段注释</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#[[这是一个段注释</span></span><br><span class="line"><span class="comment">CMakeLists.tst</span></span><br><span class="line"><span class="comment">CMakeLists.tst</span></span><br><span class="line"><span class="comment">]]</span></span><br></pre></td></tr></table></figure>
-
-<p>2、添加CMakeLists.txt文件</p>
+<p>2、添加 CMakeLists.txt 文件</p>
 <p>文件内容如下</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake_mininum_required(VERSION 3.0)#指定使用的cmake最低版本</span><br><span class="line">project(CALC)#定义工程名称，并指定可用的版本、工程描述、web主页地址、支持的语言，如果不需要的这些都可以需略，只要写出工程名就行</span><br><span class="line">add_executable(可执行程序名 源文件名称)#定义工程会生成一个可执行程序，源文件名可以是多个，用空格或者;间隔</span><br></pre></td></tr></table></figure>
-
-<p>3、执行CMake命令</p>
+<p>3、执行 CMake 命令</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake </span><br><span class="line">cmake CMakeLists.txt文件路径</span><br><span class="line">make </span><br></pre></td></tr></table></figure>
-
-<p>4、set的使用</p>
-<p>(1)定义变量的名字</p>
+<p>4、set 的使用</p>
+<p>(1) 定义变量的名字</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#SET 指令语法</span></span><br><span class="line"><span class="comment">#  []中的参数为可选择项，</span></span><br><span class="line"><span class="keyword">SET</span>(VAR [VALUE] [CACHE TYPE DOCSTRING []])</span><br></pre></td></tr></table></figure>
-
-<p>(2)指定使用的C++标准</p>
+<p>(2) 指定使用的 C++ 标准</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span>(CMAKE_CXX_STANDARD <span class="number">11</span>)</span><br></pre></td></tr></table></figure>
-
-<p>(3)指定输出的路径</p>
+<p>(3) 指定输出的路径</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span>(HOME /home/robin/Linux/Sort)</span><br><span class="line"><span class="keyword">set</span>(EXECUTABLE_OUTPUT_PATH <span class="variable">$&#123;HOME&#125;</span>/bin)</span><br><span class="line"><span class="comment"># $&#123; &#125;表示取出变量的值</span></span><br></pre></td></tr></table></figure>
-
 <p>5、搜索文件</p>
 <p>（1）aux_source_directory</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">aux_source_directory</span>(&lt;dir&gt; &lt;variable&gt;)</span><br></pre></td></tr></table></figure>
-
 <pre><code>- dir:要搜索的目录
 - variable：需要存储的变量
 </code></pre>
 <p>（2）file</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">file</span>(GLOB/GLOB_RECURSE 变量名 要搜索的文件路径和文件类型)</span><br></pre></td></tr></table></figure>
-
 
                 
             </div>
