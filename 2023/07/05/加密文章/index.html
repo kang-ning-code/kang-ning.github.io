@@ -19,7 +19,7 @@
 
 
     <title>加密文章测试，输入test即可查看 | 宁康同学</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/img/toux.png">
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
@@ -34,6 +34,16 @@
 
 
 
+    <style>
+    body{
+       background-image: url(/img/default.png);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
+
+
 
 <body>
 <header class="navbar-fixed">
@@ -42,7 +52,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/img/toux.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">宁康同学</span>
                 </a>
@@ -238,7 +248,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/img/toux.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">宁康同学</div>
         <div class="logo-desc">
@@ -318,9 +328,9 @@
               
                 <li>
 
-                  <a href="/research " style="margin-left:75px">
+                  <a href="/research " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-flask" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-flask" style="position: absolute;left:28px" ></i>
 			      
 		          <span>科研</span>
                   </a>
@@ -328,9 +338,9 @@
               
                 <li>
 
-                  <a href="/project " style="margin-left:75px">
+                  <a href="/project " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-print" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-print" style="position: absolute;left:28px" ></i>
 			      
 		          <span>项目</span>
                   </a>
@@ -338,9 +348,9 @@
               
                 <li>
 
-                  <a href="/note " style="margin-left:75px">
+                  <a href="/note " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-book" style="position: absolute;left:28px" ></i>
 			      
 		          <span>笔记</span>
                   </a>
@@ -363,9 +373,9 @@
               
                 <li>
 
-                  <a href="/music " style="margin-left:75px">
+                  <a href="/music " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-music" style="position: absolute;left:28px" ></i>
 			      
 		          <span>音乐</span>
                   </a>
@@ -373,9 +383,9 @@
               
                 <li>
 
-                  <a href="/gallery " style="margin-left:75px">
+                  <a href="/gallery " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-image" style="position: absolute;left:28px" ></i>
 			      
 		          <span>相册</span>
                   </a>
@@ -383,9 +393,9 @@
               
                 <li>
 
-                  <a href="/artitalk " style="margin-left:75px">
+                  <a href="/artitalk " style="margin-left:50px">
 				  
-				   <i class="fa fas fa-blog" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-blog" style="position: absolute;left:28px" ></i>
 			      
 		          <span>说说</span>
                   </a>
@@ -524,104 +534,10 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        padding: 35px 0 15px 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        padding-bottom: 30px;
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-
-        position: absolute;
-        right: 23.5vw;
-        display: block;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 137px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -664,7 +580,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="ec57d015d6779b766e396c4fb925de59533b4a9c1b5d2a5ebfead5e54347c033">bd25ed9264b080267271e137e33d0ce1e1069d88f9699965ec2c8f2e4412683a11965185006bffa98a0a821510d9346f09318e6bad83c5df43f6251105f61d270c32a97bb2827cd20739af9fa6249e3505e6204e790853d1055ff147ba28e468da491a0921c539a0aade5171857db6233efc852ff230d5b1b6270021a7f2274a7a7891f11d85473690422648fdf7e8fe0bc0a35316d79978fb5a968561647a862e544a8a275bfbfa37eda4ab0cac2bdb88c71d79954054a9fbf856d5593a847b18d84dd9bc8fb2058209823dbed3087e441409a69b4c25c2c5cf16d77747cbc7fdd91266a23b65a00fd486d4159baee184bf61fa2d3e69ef266d81350bbe7174b1af7748bc94f6936c10e9682801f8d817b5a32c11ec4eb3f32e0bd159fc60cb53b54584a7fff8d537f471122361abbdfb275906ab00ea5940a5804ac8210504e37df580b831cfbedabb1109d48b8ffc6937e3cf09be0f6f9ab48035206a44c76ac8674e71b1c4768906dc8ecd897045d66bee35b7f65b5a8de9356a34261b4f1033cb02449cccf6be8d3619db390db01ed1ea6af35cb86dd2069a08b3b492857281796ca10b33aa177df898954697c34af44357d03954d15d1e489619e834c02a1e0d91eccba35d5158dd6dea84ceb408c10bb3542e01e03051bdcfd328fe83f57ec9dbb99d89be2b8e8bd5e80035c0353a0151523a077deed00f55c71b0275128ef4bab5325f92c937c73e66e36eaed23cc282eac704189e218864dcd0a47fda27dba1c8d9c0a3333290ab8a57140173d4c88268ba5d1716d6d7ca3acd0f007a12754dab090ade6686efd6225171e8b6adc731dbfbabcf01169e092255f3477d01ab93ca5570e39e4f1fcdff3756bab000545c697103ced1138200b81b5f39f703482ccec8733753f2dd39f951605f4685ad03da40dba3a82d34d448a312566f2dbc644630d13227fff9641c0b439737cacb3543423b16fd016a37610e295a586e4e012a7978ff1a16eede400a5aaadd5432106d98bf9348446a164bb6c222187f1c1f36551367b6cc15b9d2c3db1b2a0ae72e292f708f2b305ad0a250c7771f2b4b785bca41b1e72c9fad0c015748ed8e787953a427f8c1d91a8ec5bf4882aac14cb649aaeecbc1cc4091301f2b84b83761be957f00792ab7c05e962d98c7d6e78c81be29adfaf3da4bfe2408becaae3ba22ed23de78b7cf74f935e7fa33143ef8abe66d447bbf9b238bf3f6324c43b920e907def2c2e4435aa4a1081a5ac5799676c0dded94c111023a84ae305510cb797cfd7f0beef079aad5547038ce5e564123c415e8b2796e67e5bd9817bd8536319bc8828dbc40ec56fe9e38ed12e0b073b79c6bc28bae9f9e2f5e6c54bd1e8fc0a346403cd203aa2918134f53afc452595941b26f70b94aba534f6afb61f2a5319c64e2fbee5dffe058cd4ec406d0a95db4c50a06b6a3248ad0f0ccd679b63d3239b26dd486855e0e42bde32c7711487cd90a3831229b2cf8bd3aecbbca1a9060a6e930ac20a8a457779908112c8a11e14b4839a7197531395bea93983a0</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="dec0024ff0cc573597285805ee2b969e7941f53b7bdb1f9d4de2cfe1b2833e62">bd25ed9264b080267271e137e33d0ce1e1069d88f9699965ec2c8f2e4412683a11965185006bffa98a0a821510d9346f09318e6bad83c5df43f6251105f61d270c32a97bb2827cd20739af9fa6249e3505e6204e790853d1055ff147ba28e468da491a0921c539a0aade5171857db6233efc852ff230d5b1b6270021a7f2274a7a7891f11d85473690422648fdf7e8fe0bc0a35316d79978fb5a968561647a862e544a8a275bfbfa37eda4ab0cac2bdb88c71d79954054a9fbf856d5593a847b18d84dd9bc8fb2058209823dbed3087e441409a69b4c25c2c5cf16d77747cbc7fdd91266a23b65a00fd486d4159baee184bf61fa2d3e69ef266d81350bbe7174b1af7748bc94f6936c10e9682801f8d817b5a32c11ec4eb3f32e0bd159fc60cb53b54584a7fff8d537f471122361abbdfb275906ab00ea5940a5804ac8210504d4b55d15c2f5190dd2100aab7931a017bf537d809771012987506db9a89488ba579ec462fd51855aab0f523fe72a75b4009fb9ec0eb9a215e0a02a7e8cb4dd8b63a73c42a65a8f891dc460f4c384a6db1a02950ef7530eb47396c7b8eda9081af0ab2f89f2e1002ef886e22dc42cdd598a8f68b3289b32a6b9318e68e17321aa8bb984554bb371c0e5a702a8b3665437bc9811fac2d47303f01946f79540cabf30deee67418986bebd888ce21f1e4a91f266e35017ed935676fc66a5d02c21184ead2d8fc2b2a4d4f556b9fc8dcf0f8a0c2f16ad167e2b4f2e9a213eee95d99d34971fdbdbe81f6b388e4863ed1a23b69e15d440c8bdc781b4ec7c6dd29a9d1a7badd19fe430ba02845ec3a4eb3897fa3baf0bee71dc817b3de93bcfed615c2f49b00d438bce84e2e988d273eaefdc83fe8fbe2c4d9532332761a7ca3e02b548ac96fbf15c58328abfa83e30461343d9d91ef4735516c5e46a59c2705460e53c09faf4775e1965be61c3b053e088c6c44fd1ad32e29c1cd5591facef0ba22ebc2d12d240d7fab2cccbb7c2244e35e2444a8e16ca0e91ff4e6aae7d0e5786da988bcb19f5f7d7febb991acf294c027d5517e823b77beef95aefbda493c2631d7dad4ad89da01d5af5aa59ef9dfaf76cf86f1cfb035c090261e7c449bac37c7e9d3d895526009eda8d13fe6579ca30b7787799a372bc98e49b68d39afdebc3062658417b265c062dd979138a73a266f5835d07f1d7c7196c210f9a4f945f7533dfc732bbbd96ef3c261fe993efb19db888f74def3918e63e7bdd2dbc40f910a123c234a59c8002f4992a679e23b3d65ed08f519bafcb529de194736e67e8786a08cc57865fb87e9d6702d7aa534ec6988fa10da8a0dc9fa5abea838dd5f519277f4be8993fdf57ccc64baa253e32487c5e</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -756,132 +672,6 @@
 
                 </div>
             </div>
-            
-                <style>
-    #reward {
-        margin: 40px 0;
-        text-align: center;
-    }
-
-    #reward .reward-link {
-        font-size: 1.4rem;
-        line-height: 38px;
-    }
-
-    #reward .btn-floating:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    #rewardModal {
-        width: 320px;
-        height: 350px;
-    }
-
-    #rewardModal .reward-title {
-        margin: 15px auto;
-        padding-bottom: 5px;
-    }
-
-    #rewardModal .modal-content {
-        padding: 10px;
-    }
-
-    #rewardModal .close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 1.3rem;
-        line-height: 20px;
-        cursor: pointer;
-    }
-
-    #rewardModal .close:hover {
-        color: #ef5350;
-        transform: scale(1.3);
-        -moz-transform:scale(1.3);
-        -webkit-transform:scale(1.3);
-        -o-transform:scale(1.3);
-    }
-
-    #rewardModal .reward-tabs {
-        margin: 0 auto;
-        width: 210px;
-    }
-
-    .reward-tabs .tabs {
-        height: 38px;
-        margin: 10px auto;
-        padding-left: 0;
-    }
-
-    .reward-content ul {
-        padding-left: 0 !important;
-    }
-
-    .reward-tabs .tabs .tab {
-        height: 38px;
-        line-height: 38px;
-    }
-
-    .reward-tabs .tab a {
-        color: #fff;
-        background-color: #ccc;
-    }
-
-    .reward-tabs .tab a:hover {
-        background-color: #ccc;
-        color: #fff;
-    }
-
-    .reward-tabs .wechat-tab .active {
-        color: #fff !important;
-        background-color: #22AB38 !important;
-    }
-
-    .reward-tabs .alipay-tab .active {
-        color: #fff !important;
-        background-color: #019FE8 !important;
-    }
-
-    .reward-tabs .reward-img {
-        width: 210px;
-        height: 210px;
-    }
-</style>
-
-<div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
             
         </div>
     </div>
@@ -1015,100 +805,6 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src=""></script>
-<script>
-    $.getScript("/libs/tocbot/tocbot.min.js",function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    })
-</script>
 
     
 
