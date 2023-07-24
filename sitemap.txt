@@ -32,4 +32,5 @@ http://example.com/music/index.html
 http://example.com/2023/07/04/hello-world/
 http://example.com/
 http://example.com/tags/%E7%A7%91%E7%A0%94/
+http://example.com/categories/%E8%BD%A6%E8%81%94%E7%BD%91/
 http://example.com/categories/research/
