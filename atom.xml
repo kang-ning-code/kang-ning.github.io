@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-07-24T12:31:39.295Z</updated>
+  <updated>2023-07-25T07:51:56.523Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>智能网联车企业汇总</title>
+    <link href="http://example.com/2023/07/25/%E6%99%BA%E8%83%BD%E7%BD%91%E8%81%94%E8%BD%A6%E4%BC%81%E4%B8%9A%E6%B1%87%E6%80%BB/"/>
+    <id>http://example.com/2023/07/25/%E6%99%BA%E8%83%BD%E7%BD%91%E8%81%94%E8%BD%A6%E4%BC%81%E4%B8%9A%E6%B1%87%E6%80%BB/</id>
+    <published>2023-07-25T06:53:05.632Z</published>
+    <updated>2023-07-25T07:51:56.523Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="智能网联车产业链"><a class="markdownIt-Anchor" href="#智能网联车产业链">#</a> 智能网联车产业链</h1><p><img src="../file/image-20230725145631470.png" alt="image-20230725145631470"></p><h1 id="领域企业"><a class="markdownIt-Anchor" href="#领域企业">#</a> 领域企业</h1><h2 id="汽车通讯十大企业"><a class="markdownIt-Anchor" href="#汽车通讯十大企业">#</a> 汽车通讯（十大企业）</h2><p>主要是研究 LTE-V2X 和 NR-V2X 技术。</p><blockquote><ul><li>高通公司</li><li>中兴通讯股份有限公司</li><li>中国联合网络通信股份有限公司（中国联通）</li><li>诺基亚</li><li>爱立信</li><li>英特尔公司</li><li>LG 集团</li><li><strong>大唐电信科技股份有限公司</strong></li><li>中国移动有限公司</li><li><strong>联芯科技有限公司</strong></li></ul></blockquote><h2 id="语言交互ai技术"><a class="markdownIt-Anchor" href="#语言交互ai技术">#</a> 语言交互（AI 技术）</h2><blockquote><ul><li>科大讯飞股份有限公司</li><li><strong>苏州思必驰信息科技有限公司</strong></li><li><strong>微妙通讯公司</strong></li><li>苹果公司</li><li>亚马逊公司</li><li><strong>上海傲硕信息科技有限公司</strong></li></ul></blockquote><h2 id="高精地图slam"><a class="markdownIt-Anchor" href="#高精地图slam">#</a> 高精地图（SLAM)</h2><blockquote><ul><li>深动科技（北京）有限公司</li><li>宽凳（北京）科技有限公司</li><li>北京四维图新科技股份有限公司</li><li>北京迪路科技有限公司</li><li>百度股份有限公司</li><li>高德软件有限公司</li><li>TOMTOM（荷兰公司）</li><li>千寻位置网络有限公司</li><li>易图通科技（北京）有限公司</li><li>武汉中海庭数据技术有限公司</li><li>武汉维智空间科技有限公司</li><li>北京智眸科技有限公司</li></ul></blockquote><h2 id="智能中控嵌入式"><a class="markdownIt-Anchor" href="#智能中控嵌入式">#</a> 智能中控（嵌入式）</h2><p>这个主要是开发车载系统，控制各种传感器，涉及的工作方向主要是嵌入式驱动和软件开发方面。</p><blockquote><ul><li>苏州天瞳威视电子科技有限公司 (主要做车载系统)</li><li>中智行科技有限公司（主要做激光雷达，也会需要视觉）</li><li>宁波均胜电子股份有限公司（主要做机器人和内外饰功能器件）</li><li>惠州市德赛西威汽车电子股份有限公司（主要是做导航和空调控制器）</li><li>杭州智波科技有限公司（主要是做毫米波雷达）</li><li>日本电装公司（汽车零部件）</li><li>LGDisplay（液晶显示面板）</li><li>哈曼汽车电子系统（苏州）有限公司（影像设备）</li><li>伟世通公司 (座位)</li><li>东软集团股份有限公司（软件技术，该公司有政府投资，类似国企）</li><li>南京行车宝智能科技有限公司（人工智能，模式识别算法提供公司)</li></ul></blockquote><h2 id="adas执行辅助驾驶系统"><a class="markdownIt-Anchor" href="#adas执行辅助驾驶系统">#</a> ADAS 执行（辅助驾驶系统）</h2><blockquote><ul><li>耐世特汽车系统集团有限公司</li></ul></blockquote><h2 id="汽车芯片"><a class="markdownIt-Anchor" href="#汽车芯片">#</a> 汽车芯片</h2><blockquote><ul><li>英飞凌</li><li>赛灵思</li><li>英伟达</li><li>华为技术有限公司</li><li>意法半导体公司</li><li>恩智浦半导体公司</li><li>三星电子</li><li>美国德州仪器公司</li><li><strong>北京中科寒武纪科技有限公司</strong></li><li>瑞萨电子株式会社</li><li><strong>深圳地平线机器人科技有限公司</strong></li><li><strong>北京佳光科技有限公司</strong></li></ul></blockquote><h2 id="激光雷达"><a class="markdownIt-Anchor" href="#激光雷达">#</a> 激光雷达</h2><blockquote><ul><li><strong>上海禾赛光电科技有限公司</strong></li><li><strong>深圳市镭神智能系统有限公司</strong></li><li><strong>深圳市速腾聚创科技有限公司</strong></li><li><strong>北京北科天绘科技有限公司</strong></li><li>博世汽车部件（苏州）有限公司</li><li>采埃孚传动系统（北京）有限公司</li></ul></blockquote><h2 id="毫米波雷达"><a class="markdownIt-Anchor" href="#毫米波雷达">#</a> 毫米波雷达</h2><blockquote><ul><li>华域汽车系统股份有限公司</li><li>德国大陆集团</li><li>天津富士通天电子有限公司</li><li>瑞典奥托立夫公司</li></ul></blockquote><h2 id="智能驾驶方案和算法提供商"><a class="markdownIt-Anchor" href="#智能驾驶方案和算法提供商">#</a> 智能驾驶方案和算法提供商</h2><blockquote><ul><li>魔视智能科技（上海）有限公司 (人工智能，计算机视觉)</li><li>北京市商汤科技开发有限公司（计算机视觉和深度学习）</li><li>北京初速度科技有限公司</li><li><strong>武汉环宇智行科技有限公司（百度投资，好于高新兴）</strong></li><li><strong>禾多科技（北京）有限公司</strong></li><li>武汉极目智能技术有限公司</li><li>北京图森未来科技有限公司</li><li>上海智驾电子科技有限公司</li><li>深圳车智佳科技有限公司</li><li>驭势科技（北京）有限公司</li><li><strong>深圳佑驾创新科技有限公司（中兴投资）</strong></li><li><strong>知行汽车科技（苏州）有限公司</strong></li><li>宁波傲视智绘光电科技有限公司</li><li><strong>北京智行者科技有限公司</strong></li><li><strong>深圳玩智商科技有限公司</strong></li><li><strong>北京小马智行科技有限公司</strong></li><li>景驰科技有限公司</li></ul></blockquote><h2 id="出行服务商打车平台"><a class="markdownIt-Anchor" href="#出行服务商打车平台">#</a> 出行服务商（打车平台）</h2><blockquote><ul><li><strong>杭州优行科技有限公司 (吉利投资)</strong></li><li><strong>滴滴出行科技有限公司</strong></li><li>北京东方车云信息技术有限公司</li><li>神州优车股份有限公司（阿里巴巴投资）</li><li>北京三快科技有限公司</li><li>首约科技（北京）有限公司</li><li>北京畅行信息技术有限公司（嘀嗒拼车的母公司）</li><li>曹操出行</li></ul></blockquote><h2 id="车企自己造车"><a class="markdownIt-Anchor" href="#车企自己造车">#</a> 车企（自己造车）</h2><blockquote><ul><li>特斯拉</li><li>通用汽车公司</li><li>上海汽车集团股份有限公司 (上汽)</li><li>上海蔚来汽车有限公司</li><li><strong>广州汽车集团股份有限公司</strong></li><li><strong>吉利汽车控股有限公司</strong></li><li>智车优行科技（北京）有限公司</li><li><strong>广州小鹏汽车科技有限公司</strong></li><li><strong>南京拜腾汽车科技有限公司</strong></li><li>威马汽车科技集团有限公司</li></ul></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;js&#92;APlayer.min.js&quot; class=&quot;aplayer-se</summary>
+      
+    
+    
+    
+    <category term="工作" scheme="http://example.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>2023年7月24日会议记录</title>
