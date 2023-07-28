@@ -1,3 +1,4 @@
+http://example.com/music/index.html
 http://example.com/2023/07/26/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E9%93%BE%E8%A1%A8/
 http://example.com/2023/07/25/%E6%99%BA%E8%83%BD%E7%BD%91%E8%81%94%E8%BD%A6%E4%BC%81%E4%B8%9A%E6%B1%87%E6%80%BB/
 http://example.com/2023/07/24/2023%E5%B9%B47%E6%9C%8824%E6%97%A5%E4%BC%9A%E8%AE%AE%E8%AE%B0%E5%BD%95/
@@ -30,7 +31,6 @@ http://example.com/work/index.html
 http://example.com/gallery/index.html
 http://example.com/tags/index.html
 http://example.com/research/index.html
-http://example.com/music/index.html
 http://example.com/2023/07/04/hello-world/
 http://example.com/
 http://example.com/tags/%E7%A7%91%E7%A0%94/
