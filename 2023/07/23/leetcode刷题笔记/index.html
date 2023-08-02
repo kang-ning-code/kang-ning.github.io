@@ -5,11 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="leetcode刷题笔记——数组(螺旋数组), 宁康同学">
-    <meta name="description" content="螺旋数组1
+    <meta name="description" content="# 螺旋数组 1
+
 题目
 
 54. 螺旋矩阵 - 力扣
-123给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]输出：[1,2,">
+123给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]输出：[">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -448,7 +449,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/kang-ning-code/" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -505,7 +506,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/kang-ning-code/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -526,7 +527,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -595,12 +596,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="螺旋数组1"><a href="#螺旋数组1" class="headerlink" title="螺旋数组1"></a>螺旋数组1</h4><ul>
+                <h4 id="螺旋数组1"><a class="markdownIt-Anchor" href="#螺旋数组1">#</a> 螺旋数组 1</h4>
+<ul>
 <li>题目</li>
 </ul>
 <p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/spiral-matrix/">54. 螺旋矩阵 - 力扣</a></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。</span><br><span class="line">输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]</span><br><span class="line">输出：[1,2,3,6,9,8,7,4,5]</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>思路</li>
 </ul>
@@ -609,22 +610,21 @@
 <li>代码实现</li>
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">spiralOrder</span><span class="params">(vector&lt;vector&lt;<span class="type">int</span>&gt;&gt;&amp; matrix)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (matrix.<span class="built_in">size</span>() == <span class="number">0</span> || matrix[<span class="number">0</span>].<span class="built_in">size</span>() == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> &#123;&#125;;</span><br><span class="line">        <span class="type">int</span> rows = matrix.<span class="built_in">size</span>(), columns = matrix[<span class="number">0</span>].<span class="built_in">size</span>();</span><br><span class="line">        <span class="type">int</span> total = rows * columns;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">res</span><span class="params">(total)</span></span>; <span class="comment">// 使用vector定义一个一维数组存放结果</span></span><br><span class="line">        <span class="type">int</span> startx = <span class="number">0</span>, starty = <span class="number">0</span>; <span class="comment">// 定义每循环一个圈的起始位置</span></span><br><span class="line">        <span class="comment">//int loop = min(rows, columns) / 2; </span></span><br><span class="line">        <span class="type">int</span> loop =(rows&lt;columns?rows:columns)/<span class="number">2</span>;</span><br><span class="line">        <span class="comment">// 本题的loop计算与59.螺旋矩阵II算法略微差异，因为存在rows和columns两个维度，可自行分析，loop只能取min(rows, columns)，例如rows = 5, columns = 7，那loop = 5 / 7 = 2</span></span><br><span class="line">        <span class="type">int</span> mid = <span class="built_in">min</span>(rows, columns) / <span class="number">2</span>; </span><br><span class="line">        <span class="comment">// 1、同样的原理，本题的mid计算也存在上述差异；</span></span><br><span class="line">        <span class="comment">// 2、</span></span><br><span class="line">            <span class="comment">//如果min(rows, columns)为偶数，则不需要在最后单独考虑矩阵最中间位置的赋值</span></span><br><span class="line">            <span class="comment">//如果min(rows, columns)为奇数，则矩阵最中间位置不只是[mid][mid],而是会留下来一个特殊的中间行或者中间列，具体是中间行还是中间列，要看rows和columns的大小，如果rows &gt; columns,则是中间列，相反，则是中间行</span></span><br><span class="line">        <span class="comment">//相信这一点不好理解，建议自行画图理解</span></span><br><span class="line">        <span class="type">int</span> count = <span class="number">0</span>;<span class="comment">// 用来给矩阵中每一个空格赋值</span></span><br><span class="line">        <span class="type">int</span> offset = <span class="number">1</span>;<span class="comment">// 每一圈循环，需要控制每一条边遍历的长度</span></span><br><span class="line">        <span class="type">int</span> i,j;</span><br><span class="line">        <span class="keyword">while</span> (loop --) &#123;</span><br><span class="line">            i = startx;</span><br><span class="line">            j = starty;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 下面开始的四个for就是模拟转了一圈</span></span><br><span class="line">            <span class="comment">// 模拟填充上行从左到右(左闭右开)</span></span><br><span class="line">            <span class="keyword">for</span> (j = starty; j &lt; starty + columns - offset; j++) &#123;</span><br><span class="line">                res[count++] = matrix[startx][j];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 模拟填充右列从上到下(左闭右开)</span></span><br><span class="line">            <span class="keyword">for</span> (i = startx; i &lt; startx + rows - offset; i++) &#123;</span><br><span class="line">                res[count++] = matrix[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 模拟填充下行从右到左(左闭右开)</span></span><br><span class="line">            <span class="keyword">for</span> (; j &gt; starty; j--) &#123;</span><br><span class="line">                res[count++] = matrix[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 模拟填充左列从下到上(左闭右开)</span></span><br><span class="line">            <span class="keyword">for</span> (; i &gt; startx; i--) &#123;</span><br><span class="line">                res[count++] = matrix[i][starty];</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 第二圈开始的时候，起始位置要各自加1， 例如：第一圈起始位置是(0, 0)，第二圈起始位置是(1, 1)</span></span><br><span class="line">            startx++;</span><br><span class="line">            starty++;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// offset 控制每一圈里每一条边遍历的长度</span></span><br><span class="line">            offset += <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果min(rows, columns)为奇数的话，需要单独给矩阵最中间的位置赋值</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">min</span>(rows, columns) % <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(rows &gt; columns)&#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> i = mid; i &lt; mid + rows - columns + <span class="number">1</span>; ++i) &#123;</span><br><span class="line">                    res[count++] = matrix[i][mid];</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> i = mid; i &lt; mid + columns - rows + <span class="number">1</span>; ++i) &#123;</span><br><span class="line">                    res[count++] = matrix[mid][i];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="螺旋数组2"><a href="#螺旋数组2" class="headerlink" title="螺旋数组2"></a>螺旋数组2</h1><h4 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h4><p>[59.螺旋矩阵](<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/spiral-matrix-ii/">59. 螺旋矩阵 II - 力扣（LeetCode）</a>)</p>
+<h1 id="螺旋数组2"><a class="markdownIt-Anchor" href="#螺旋数组2">#</a> 螺旋数组 2</h1>
+<h4 id="题目"><a class="markdownIt-Anchor" href="#题目">#</a> 题目</h4>
+<p>[59. 螺旋矩阵](<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/spiral-matrix-ii/">59. 螺旋矩阵 II - 力扣（LeetCode）</a>)</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">给定一个正整数 n，生成一个包含 1 到 n^2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line"></span><br><span class="line">输入: 3 输出: [ [ 1, 2, 3 ], [ 8, 9, 4 ], [ 7, 6, 5 ] ]</span><br></pre></td></tr></table></figure>
-
-<p>[讲解视频](<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1SL4y1N7mV/?vd_source=46eba7e3f1bf0f7aedc00055d7f77195">一入循环深似海 | LeetCode：59.螺旋矩阵II_哔哩哔哩_bilibili</a>)</p>
-<h4 id="思路：循环不变量的规则，即所有的边界处理保持相同的规则"><a href="#思路：循环不变量的规则，即所有的边界处理保持相同的规则" class="headerlink" title="思路：循环不变量的规则，即所有的边界处理保持相同的规则"></a>思路：<strong>循环不变量的规则</strong>，即所有的边界处理保持相同的规则</h4><p>所以就是每条边界都是留下一个节点不处理，这样就比较好处理了</p>
+<p>[讲解视频](<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1SL4y1N7mV/?vd_source=46eba7e3f1bf0f7aedc00055d7f77195">一入循环深似海 | LeetCode：59. 螺旋矩阵 II_哔哩哔哩_bilibili</a>)</p>
+<h4 id="思路循环不变量的规则即所有的边界处理保持相同的规则"><a class="markdownIt-Anchor" href="#思路循环不变量的规则即所有的边界处理保持相同的规则">#</a> 思路：<strong>循环不变量的规则</strong>，即所有的边界处理保持相同的规则</h4>
+<p>所以就是每条边界都是留下一个节点不处理，这样就比较好处理了</p>
 <ul>
 <li>填充上行从左到右</li>
 <li>填充右列从上到下</li>
 <li>填充下行从右到左</li>
 <li>填充左列从下到上</li>
 </ul>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">generateMatrix</span>(<span class="type">int</span> n) &#123;</span><br><span class="line">        <span class="type">int</span> startx=<span class="number">0</span>;<span class="comment">//x起始位置</span></span><br><span class="line">        <span class="type">int</span> starty=<span class="number">0</span>;<span class="comment">//y起始位置</span></span><br><span class="line">        <span class="type">int</span> offset=<span class="number">1</span>;<span class="comment">//空留数</span></span><br><span class="line">        <span class="type">int</span> loop = n/<span class="number">2</span>;<span class="comment">//循环圈数</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">1</span>;<span class="comment">//计数</span></span><br><span class="line">        </span><br><span class="line">         vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">nums</span>(n, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(n, <span class="number">0</span>)); <span class="comment">//计数矩阵</span></span><br><span class="line">         <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">         &#123;</span><br><span class="line">             nums[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(loop--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> j=starty;</span><br><span class="line">            <span class="type">int</span> i=startx;</span><br><span class="line">            <span class="keyword">for</span>(j=starty;j&lt;n-offset;j++)</span><br><span class="line">                nums[startx][j]=count++;<span class="comment">//保持x轴不动</span></span><br><span class="line">            <span class="keyword">for</span>(i=startx;i&lt;n-offset;i++)</span><br><span class="line">                nums[i][j]=count++;<span class="comment">//注意此时就已经到指定的位置了，不要写n-offset</span></span><br><span class="line">            <span class="keyword">for</span>(;j&gt;startx;j--)</span><br><span class="line">                nums[i][j]=count++;<span class="comment">//</span></span><br><span class="line">            <span class="keyword">for</span>(;i&gt;startx;i--)</span><br><span class="line">                nums[i][j]=count++;</span><br><span class="line"></span><br><span class="line">                <span class="comment">//移动起始点的位置</span></span><br><span class="line">                startx++;</span><br><span class="line">                starty++;</span><br><span class="line">                offset=offset+<span class="number">1</span>;  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">1</span>)&#123;</span><br><span class="line">            nums[n/<span class="number">2</span>][n/<span class="number">2</span>]=count;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+<h4 id="代码实现"><a class="markdownIt-Anchor" href="#代码实现">#</a> 代码实现</h4>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">generateMatrix</span>(<span class="type">int</span> n) &#123;</span><br><span class="line">        <span class="type">int</span> startx=<span class="number">0</span>;<span class="comment">//x起始位置</span></span><br><span class="line">        <span class="type">int</span> starty=<span class="number">0</span>;<span class="comment">//y起始位置</span></span><br><span class="line">        <span class="type">int</span> offset=<span class="number">1</span>;<span class="comment">//空留数</span></span><br><span class="line">        <span class="type">int</span> loop = n/<span class="number">2</span>;<span class="comment">//循环圈数</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">1</span>;<span class="comment">//计数</span></span><br><span class="line">        </span><br><span class="line">         vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">nums</span>(n, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(n, <span class="number">0</span>)); <span class="comment">//计数矩阵</span></span><br><span class="line">         <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">         &#123;</span><br><span class="line">             nums[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(loop--)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> j=starty;</span><br><span class="line">            <span class="type">int</span> i=startx;</span><br><span class="line">            <span class="keyword">for</span>(j=starty;j&lt;n-offset;j++)</span><br><span class="line">                nums[startx][j]=count++;<span class="comment">//保持x轴不动</span></span><br><span class="line">            <span class="keyword">for</span>(i=startx;i&lt;n-offset;i++)</span><br><span class="line">                nums[i][j]=count++;<span class="comment">//注意此时就已经到指定的位置了，不要写n-offset</span></span><br><span class="line">            <span class="keyword">for</span>(;j&gt;startx;j--)</span><br><span class="line">                nums[i][j]=count++;<span class="comment">//</span></span><br><span class="line">            <span class="keyword">for</span>(;i&gt;startx;i--)</span><br><span class="line">                nums[i][j]=count++;</span><br><span class="line"></span><br><span class="line">                <span class="comment">//移动起始点的位置</span></span><br><span class="line">                startx++;</span><br><span class="line">                starty++;</span><br><span class="line">                offset=offset+<span class="number">1</span>;  </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">1</span>)&#123;</span><br><span class="line">            nums[n/<span class="number">2</span>][n/<span class="number">2</span>]=count;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>变式题</p>
 <p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/">剑指 Offer 29. 顺时针打印矩阵 - 力扣（LeetCode）</a></p>
 
@@ -722,6 +722,276 @@
     
 
     
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling"
+         style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script>
+    $.getScript("/libs/valine/av-min.js", function () {
+        $.getScript("/libs/valine/Valine.min.js", function () {
+            new Valine({
+                el: '#vcomments',
+                appId: 'XVTTTNrslDGivM0PagA5CsXK-MdYXbMMI',
+                appKey: 'RjTS0oU7szyzeeoPTA0eZdQO',
+                notify: 'false' === 'true',
+                verify: 'false' === 'true',
+                visitor: 'true' === 'true',
+                avatar: 'mm',
+                pageSize: '10',
+                lang: 'zh-cn',
+                placeholder: 'just go go'
+            });
+
+        })
+    })
+</script>
+
+<!--酷Q推送-->
+
+
+    
 
     
 
@@ -742,7 +1012,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="leetcode刷题笔记——数组(二分查找)">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="leetcode刷题笔记——数组(二分查找)">
                         
                         <span class="card-title">leetcode刷题笔记——数组(二分查找)</span>
                     </div>
@@ -783,7 +1053,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="论文盲审评语">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="论文盲审评语">
                         
                         <span class="card-title">论文盲审评语</span>
                     </div>
@@ -877,7 +1147,7 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="3136952023"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -896,15 +1166,13 @@
 
     
     <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
                 <span id="year">2019-2023</span>
             
             <a href="/about" target="_blank">宁康</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             
@@ -927,17 +1195,76 @@
 
             <!-- 运行天数提醒. -->
             
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2019";
+                        var startMonth = "6";
+                        var startDate = "28";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="/null" target="_blank">湘ICP备-2023016612</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/kang-ning-code/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:ning-kang@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -947,7 +1274,7 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1533935920" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1533935920" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -956,10 +1283,6 @@
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>

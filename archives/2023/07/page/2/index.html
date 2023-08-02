@@ -444,7 +444,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/kang-ning-code/" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -501,7 +501,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/kang-ning-code/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -557,9 +557,9 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner2/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+     $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+      //$('.bg-cover').css('background-image', 'url(/medias/featureimages/46.jpg)');
+
 </script>
 
 
@@ -688,7 +688,7 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="CMake">
+                                <img src="/medias/featureimages/69.jpg" class="responsive-img" alt="CMake">
                                 
                                 <span class="card-title">CMake</span>
                             </div>
@@ -696,17 +696,15 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    一、CMake概述
-二、Cmake的使用
+                                    一、CMake 概述
+二、Cmake 的使用
 1、注释
 （1）行注释
 1#这是一个注释
-
 （2）段注释
 1234#[[这是一个段注释CMakeLists.tstCMakeLists.tst]]
-
-2、添加CMakeLists.txt文件
-文件内
+2、添加 CMakeLists.txt 文件
+文
                                 
                             </div>
                             <div class="publish-info">
@@ -751,7 +749,7 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="计算视觉SLAM——引言">
+                                <img src="/medias/featureimages/70.jpg" class="responsive-img" alt="计算视觉SLAM——引言">
                                 
                                 <span class="card-title">计算视觉SLAM——引言</span>
                             </div>
@@ -759,22 +757,26 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    计算视觉SLAM——引言一、学习架构第一部分：数学基础
+                                    # 计算视觉 SLAM—— 引言
+# 一、学习架构
+第一部分：数学基础
 
 
-概述Linux
+
+概述 Linux
+
 
 三维空间刚体运动表述 Eigen
 
+
 李群与李代数 Sophus
+
 
 相机模型与图像 OpenCV
 
+
 非线性优化 Ceres，g2o
 
-
-
-第二部分：视觉SLAM
 
 
                                 
@@ -817,7 +819,7 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Qt多线程编程">
+                                <img src="/medias/featureimages/87.jpg" class="responsive-img" alt="Qt多线程编程">
                                 
                                 <span class="card-title">Qt多线程编程</span>
                             </div>
@@ -825,11 +827,13 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    Qt多线程编程前言
+                                    # Qt 多线程编程
+# 前言
 
-默认的线程在Qt中成为窗口线程，也叫主线程，负责处理窗口事件或者窗口控件数据的更新
+
+默认的线程在 Qt 中成为窗口线程，也叫主线程，负责处理窗口事件或者窗口控件数据的更新
 子线程负责后台的业务处理，子线程中不能对窗口对象做任何操作，这些事情需要交给窗口线程处理
-主线程和子线程之间如果要进行数据的传递，需要
+主线程和子线程之间如果要进
                                 
                             </div>
                             <div class="publish-info">
@@ -870,7 +874,7 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="基于TCP协议的Socket网络编程示例">
+                                <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="基于TCP协议的Socket网络编程示例">
                                 
                                 <span class="card-title">基于TCP协议的Socket网络编程示例</span>
                             </div>
@@ -878,13 +882,17 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    基于TCP协议的Socket网络编程示例1、开发环境
+                                    # 基于 TCP 协议的 Socket 网络编程示例
+# 1、开发环境
+
 
 开发工具：Qt 5.15
 开发语言：C++
 
 
-2、Qt网络编程2.1 TCP基本知识TCP 协议是一种面向连接的、可靠的、基于字节流的传输层通信协议。TCP 通过检验和、序列号、确认
+# 2、Qt 网络编程
+# 2.1 TCP 基本知识
+TCP 协议是一种面向连接的、可靠的、基于字节流的传输层通信协
                                 
                             </div>
                             <div class="publish-info">
@@ -925,7 +933,7 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="加密文章测试，输入test即可查看">
+                                <img src="/medias/featureimages/88.jpg" class="responsive-img" alt="加密文章测试，输入test即可查看">
                                 
                                 <span class="card-title">加密文章测试，输入test即可查看</span>
                             </div>
@@ -975,7 +983,7 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="7月份通信类会议整理">
+                                <img src="/medias/featureimages/80.jpg" class="responsive-img" alt="7月份通信类会议整理">
                                 
                                 <span class="card-title">7月份通信类会议整理</span>
                             </div>
@@ -983,7 +991,10 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    N0.1 第五届电子与通信、网络与计算机技术国际学术会议（ECNCT 2023)征稿主题：(1)通信技术及应用；（2）网络工程和应用技术；（3）智能系统；（4）信息科学截稿日期：2023年7月11日会议地点：广州NO.2 第七届通信与网络技
+                                    # N0.1 第五届电子与通信、网络与计算机技术国际学术会议（ECNCT 2023)
+# 征稿主题：(1) 通信技术及应用；（2）网络工程和应用技术；（3）智能系统；（4）信息科学
+# 截稿日期：2023 年 7 月 11 日
+# 会议地点
                                 
                             </div>
                             <div class="publish-info">
@@ -1034,7 +1045,7 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                                <img src="/medias/featureimages/33.jpg" class="responsive-img" alt="Hello World">
                                 
                                 <span class="card-title">Hello World</span>
                             </div>
@@ -1130,7 +1141,7 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="3136952023"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -1149,15 +1160,13 @@
 
     
     <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
                 <span id="year">2019-2023</span>
             
             <a href="/about" target="_blank">宁康</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             
@@ -1180,17 +1189,76 @@
 
             <!-- 运行天数提醒. -->
             
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2019";
+                        var startMonth = "6";
+                        var startDate = "28";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
             <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="/null" target="_blank">湘ICP备-2023016612</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/kang-ning-code/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:ning-kang@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1200,7 +1268,7 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1533935920" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1533935920" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -1209,10 +1277,6 @@
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>
