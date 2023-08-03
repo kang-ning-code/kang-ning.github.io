@@ -5,13 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="基于TCP协议的Socket网络编程示例, 宁康同学">
-    <meta name="description" content="基于TCP协议的Socket网络编程示例1、开发环境
+    <meta name="description" content="# 基于 TCP 协议的 Socket 网络编程示例
+# 1、开发环境
+
 
 开发工具：Qt 5.15
 开发语言：C++
 
 
-2、Qt网络编程2.1 TCP基本知识TCP 协议是一种面向连接的、可靠的、基于字节流的传输层通信协议。TCP 通过检验和、序列号、确认">
+# 2、Qt 网络编程
+# 2.1 TCP 基本知识
+TCP 协议是一种面向连接的、可靠的、基于字节流的传输层通信协">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -588,100 +592,128 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="基于TCP协议的Socket网络编程示例"><a href="#基于TCP协议的Socket网络编程示例" class="headerlink" title="基于TCP协议的Socket网络编程示例"></a>基于TCP协议的Socket网络编程示例</h1><h3 id="1、开发环境"><a href="#1、开发环境" class="headerlink" title="1、开发环境"></a>1、开发环境</h3><hr>
+                <h1 id="基于tcp协议的socket网络编程示例"><a class="markdownIt-Anchor" href="#基于tcp协议的socket网络编程示例">#</a> 基于 TCP 协议的 Socket 网络编程示例</h1>
+<h3 id="1-开发环境"><a class="markdownIt-Anchor" href="#1-开发环境">#</a> 1、开发环境</h3>
+<hr>
 <blockquote>
 <p>开发工具：Qt 5.15</p>
 <p>开发语言：C++</p>
 </blockquote>
 <hr>
-<h3 id="2、Qt网络编程"><a href="#2、Qt网络编程" class="headerlink" title="2、Qt网络编程"></a>2、Qt网络编程</h3><h4 id="2-1-TCP基本知识"><a href="#2-1-TCP基本知识" class="headerlink" title="2.1 TCP基本知识"></a>2.1 TCP基本知识</h4><p>TCP 协议是一种面向连接的、可靠的、基于字节流的传输层<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE&spm=1001.2101.3001.7020">通信协议</a>。TCP 通过检验和、序列号、确认应答、重发控制、连接管理以及窗口控制等机制实现可靠性传输。</p>
-<p>（1）TCP 通过<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B&spm=1001.2101.3001.7020">三次握手</a>来建立可靠的连接。</p>
+<h3 id="2-qt网络编程"><a class="markdownIt-Anchor" href="#2-qt网络编程">#</a> 2、Qt 网络编程</h3>
+<h4 id="21-tcp基本知识"><a class="markdownIt-Anchor" href="#21-tcp基本知识">#</a> 2.1 TCP 基本知识</h4>
+<p>TCP 协议是一种面向连接的、可靠的、基于字节流的传输层<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE&amp;spm=1001.2101.3001.7020">通信协议</a>。TCP 通过检验和、序列号、确认应答、重发控制、连接管理以及窗口控制等机制实现可靠性传输。</p>
+<p>（1）TCP 通过<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B&amp;spm=1001.2101.3001.7020">三次握手</a>来建立可靠的连接。</p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNzk3NDkwLWY4NjY4OGNmNDkxZjJlOTMucG5n?x-oss-process=image/format,png" alt="img"></p>
 <p>（2）TCP 四次挥手断开连接。</p>
-<p>TCP连接是双向的，在四次挥手中，前两次挥手用于断开一个方向的连接，后两次挥手用于断开另一方向的连接。</p>
+<p>TCP 连接是双向的，在四次挥手中，前两次挥手用于断开一个方向的连接，后两次挥手用于断开另一方向的连接。</p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNzk3NDkwLWU1MWMxNDU1MTM5NzNlOGYucG5n?x-oss-process=image/format,png" alt="img"></p>
-<p>（3）TCP报头数据结构</p>
+<p>（3）TCP 报头数据结构</p>
 <p><img src="https://img-blog.csdn.net/20180620002403691?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM2NjI5Njk2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
 <ul>
-<li><p>源端口号&#x2F;目的端口号: 表示数据从哪个进程来, 到哪个进程去.</p>
+<li>
+<p>源端口号 / 目的端口号：表示数据从哪个进程来，到哪个进程去.</p>
 </li>
-<li><p>32位序号:</p>
+<li>
+<p>32 位序号:</p>
 </li>
-<li><p>4位首部长度: 表示该tcp报头有多少个4字节(32个bit)</p>
+<li>
+<p>4 位首部长度：表示该 tcp 报头有多少个 4 字节 (32 个 bit)</p>
 </li>
-<li><p>6位保留: 顾名思义, 先保留着, 以防万一</p>
+<li>
+<p>6 位保留：顾名思义，先保留着，以防万一</p>
 </li>
-<li><p>6位标志位</p>
+<li>
+<p>6 位标志位</p>
 </li>
 </ul>
 <hr>
-<p>URG: 标识紧急指针是否有效<br>ACK: 标识确认序号是否有效<br>PSH: 用来提示接收端应用程序立刻将数据从tcp缓冲区读走<br>RST: 要求重新建立连接. 我们把含有RST标识的报文称为复位报文段<br>SYN: 请求建立连接. 我们把含有SYN标识的报文称为同步报文段<br>FIN: 通知对端, 本端即将关闭. 我们把含有FIN标识的报文称为结束报文段<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_36629696/article/details/80740678">https://blog.csdn.net/sinat_36629696/article/details/80740678</a></p>
-<h3 id="2-2-QTcpSocket和QTcpServer的基本使用"><a href="#2-2-QTcpSocket和QTcpServer的基本使用" class="headerlink" title="2.2  QTcpSocket和QTcpServer的基本使用"></a>2.2  QTcpSocket和QTcpServer的基本使用</h3><h4 id="1-头文件"><a href="#1-头文件" class="headerlink" title="(1)头文件"></a>(1)头文件</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QTcpServer&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QTcpSocket&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QHostAddress&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-pro文件"><a href="#2-pro文件" class="headerlink" title="(2)pro文件"></a>(2)pro文件</h4><p>要使用 Qt 的网络模块需要在 pro 中加上 network（如果是 VS IDE 就在模块选择里勾选上 network）：</p>
+<p>URG: 标识紧急指针是否有效<br>
+ ACK: 标识确认序号是否有效<br>
+ PSH: 用来提示接收端应用程序立刻将数据从 tcp 缓冲区读走<br>
+ RST: 要求重新建立连接。我们把含有 RST 标识的报文称为复位报文段<br>
+ SYN: 请求建立连接。我们把含有 SYN 标识的报文称为同步报文段<br>
+ FIN: 通知对端，本端即将关闭。我们把含有 FIN 标识的报文称为结束报文段<br>
+原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_36629696/article/details/80740678">https://blog.csdn.net/sinat_36629696/article/details/80740678</a></p>
+<h3 id="22-qtcpsocket和qtcpserver的基本使用"><a class="markdownIt-Anchor" href="#22-qtcpsocket和qtcpserver的基本使用">#</a> 2.2  QTcpSocket 和 QTcpServer 的基本使用</h3>
+<h4 id="1头文件"><a class="markdownIt-Anchor" href="#1头文件">#</a> (1) 头文件</h4>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QTcpServer&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QTcpSocket&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QHostAddress&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="2pro文件"><a class="markdownIt-Anchor" href="#2pro文件">#</a> (2) pro 文件</h4>
+<p>要使用 Qt 的网络模块需要在 pro 中加上 network（如果是 VS IDE 就在模块选择里勾选上 network）：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QT += network</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-基本工作流程"><a href="#3-基本工作流程" class="headerlink" title="(3)基本工作流程"></a>(3)基本工作流程</h4><p><img src="https://img-blog.csdn.net/20170708153025857" alt="img"> </p>
-<h4 id="4-QTcpServer的接口-服务端"><a href="#4-QTcpServer的接口-服务端" class="headerlink" title="(4)QTcpServer的接口(服务端)"></a>(4)QTcpServer的接口(服务端)</h4><p>QTcpServer 是 Qt 框架中用于创建 TCP 服务器的类。它提供了一组接口来监听传入的连接请求，并与客户端进行通信。</p>
+<h4 id="3基本工作流程"><a class="markdownIt-Anchor" href="#3基本工作流程">#</a> (3) 基本工作流程</h4>
+<p><img src="https://img-blog.csdn.net/20170708153025857" alt="img"></p>
+<h4 id="4qtcpserver的接口服务端"><a class="markdownIt-Anchor" href="#4qtcpserver的接口服务端">#</a> (4) QTcpServer 的接口 (服务端)</h4>
+<p>QTcpServer 是 Qt 框架中用于创建 TCP 服务器的类。它提供了一组接口来监听传入的连接请求，并与客户端进行通信。</p>
 <p>下面是一些常用的 QTcpServer 接口：</p>
 <ol>
-<li>构造函数和析构函数：<ul>
-<li><code>QTcpServer(QObject *parent = nullptr)</code>：构造一个 QTcpServer 对象，并可选择将其作为父对象管理。</li>
-<li><code>~QTcpServer()</code>：析构函数，释放 QTcpServer 对象及其资源。</li>
+<li>构造函数和析构函数：
+<ul>
+<li><code>QTcpServer(QObject *parent = nullptr)</code> ：构造一个 QTcpServer 对象，并可选择将其作为父对象管理。</li>
+<li><code>~QTcpServer()</code> ：析构函数，释放 QTcpServer 对象及其资源。</li>
 </ul>
 </li>
-<li>服务器操作：<ul>
-<li><code>bool listen(const QHostAddress &amp;address = QHostAddress::Any, quint16 port = 0)</code>：开始监听指定的地址和端口上的连接请求。</li>
-<li><code>void close()</code>：停止监听连接请求并关闭服务器。</li>
-<li><code>bool isListening() const</code>：检查服务器是否正在监听连接请求。</li>
+<li>服务器操作：
+<ul>
+<li><code>bool listen(const QHostAddress &amp;address = QHostAddress::Any, quint16 port = 0)</code> ：开始监听指定的地址和端口上的连接请求。</li>
+<li><code>void close()</code> ：停止监听连接请求并关闭服务器。</li>
+<li><code>bool isListening() const</code> ：检查服务器是否正在监听连接请求。</li>
 </ul>
 </li>
-<li>客户端连接管理：<ul>
-<li><code>bool hasPendingConnections() const</code>：检查是否有待处理的连接请求。如果有调用appendToSocketList(QTcpSocket* socket)</li>
-<li><code>QTcpSocket *nextPendingConnection()</code>：返回下一个待处理连接请求的 QTcpSocket 对象。</li>
-<li><code>void pauseAccepting()</code>：暂停接受新的连接请求。</li>
-<li><code>void resumeAccepting()</code>：恢复接受新的连接请求。</li>
+<li>客户端连接管理：
+<ul>
+<li><code>bool hasPendingConnections() const</code> ：检查是否有待处理的连接请求。如果有调用 appendToSocketList (QTcpSocket* socket)</li>
+<li><code>QTcpSocket *nextPendingConnection()</code> ：返回下一个待处理连接请求的 QTcpSocket 对象。</li>
+<li><code>void pauseAccepting()</code> ：暂停接受新的连接请求。</li>
+<li><code>void resumeAccepting()</code> ：恢复接受新的连接请求。</li>
 </ul>
 </li>
-<li>信号和槽：<ul>
-<li><code>void newConnection()</code>：当有新的连接请求时发出的信号。</li>
+<li>信号和槽：
+<ul>
+<li><code>void newConnection()</code> ：当有新的连接请求时发出的信号。</li>
 </ul>
 </li>
 </ol>
-<p>在接受新的连接请求后，您可以使用 <code>nextPendingConnection()</code> 返回的 QTcpSocket 对象来与客户端进行通信。QTcpSocket 提供了发送和接收数据的接口，可以使用它们进行数据交换。</p>
-<p>注意，返回的 QTcpSocket 对象不能在另一个线程使用，如果需要在别的线程管理这个 socket 连接，需要重写 Server 的  incomingConnection() ，将 sokcet 描述符传递给别的线程并创建 QTcpSocket：</p>
+<p>在接受新的连接请求后，您可以使用  <code>nextPendingConnection()</code>  返回的 QTcpSocket 对象来与客户端进行通信。QTcpSocket 提供了发送和接收数据的接口，可以使用它们进行数据交换。</p>
+<p>注意，返回的 QTcpSocket 对象不能在另一个线程使用，如果需要在别的线程管理这个 socket 连接，需要重写 Server 的  incomingConnection () ，将 sokcet 描述符传递给别的线程并创建 QTcpSocket：</p>
 <p><code>void QTcpServer::incomingConnection(qintptr socketDescriptor)</code></p>
 <p>您可以参考 Qt 的官方文档以获取更详细的信息和示例代码：<a target="_blank" rel="noopener" href="https://doc.qt.io/qt-6/qtcpserver.html">https://doc.qt.io/qt-6/qtcpserver.html</a></p>
-<h4 id="5-QTcpSocket的接口-客户端"><a href="#5-QTcpSocket的接口-客户端" class="headerlink" title="(5)QTcpSocket的接口(客户端)"></a>(5)QTcpSocket的接口(客户端)</h4><p>QTcpSocket 是 Qt 框架中的一个类，用于在 TCP&#x2F;IP 网络上进行通信。它提供了一组接口来建立、发送和接收 TCP 连接。</p>
+<h4 id="5qtcpsocket的接口客户端"><a class="markdownIt-Anchor" href="#5qtcpsocket的接口客户端">#</a> (5) QTcpSocket 的接口 (客户端)</h4>
+<p>QTcpSocket 是 Qt 框架中的一个类，用于在 TCP/IP 网络上进行通信。它提供了一组接口来建立、发送和接收 TCP 连接。</p>
 <p>下面是一些常用的 QTcpSocket 接口：</p>
 <ol>
-<li>构造函数和析构函数：<ul>
-<li><code>QTcpSocket(QObject *parent = nullptr)</code>：构造一个 QTcpSocket 对象，并可选择将其作为父对象管理。</li>
-<li><code>~QTcpSocket()</code>：析构函数，释放 QTcpSocket 对象及其资源。</li>
+<li>构造函数和析构函数：
+<ul>
+<li><code>QTcpSocket(QObject *parent = nullptr)</code> ：构造一个 QTcpSocket 对象，并可选择将其作为父对象管理。</li>
+<li><code>~QTcpSocket()</code> ：析构函数，释放 QTcpSocket 对象及其资源。</li>
 </ul>
 </li>
-<li>连接管理：<ul>
-<li><code>void QAbstractSocket::connectToHost(const QString &amp;hostName, quint16 port)</code>：连接到指定的主机和端口。&#x2F;&#x2F;客户端</li>
-<li><code>void QAbstractSocket::disconnectFromHost()</code>：断开与主机的连接。</li>
-<li><code>bool QAbstractSocket::isConnected() const</code>：检查是否已经连接到主机。</li>
+<li>连接管理：
+<ul>
+<li><code>void QAbstractSocket::connectToHost(const QString &amp;hostName, quint16 port)</code> ：连接到指定的主机和端口。// 客户端</li>
+<li><code>void QAbstractSocket::disconnectFromHost()</code> ：断开与主机的连接。</li>
+<li><code>bool QAbstractSocket::isConnected() const</code> ：检查是否已经连接到主机。</li>
 </ul>
 </li>
-<li>数据发送和接收：<ul>
-<li><code>qint64 QIODevice::write(const char *data, qint64 size)</code>：将指定大小的数据发送到已连接的主机。</li>
-<li><code>qint64 QIODevice::read(char *data, qint64 maxSize)</code>：从连接中读取最多 maxSize 字节的数据。</li>
-<li><code>QByteArray QIODevice::readAll()</code>：读取连接中的所有可用数据。</li>
+<li>数据发送和接收：
+<ul>
+<li><code>qint64 QIODevice::write(const char *data, qint64 size)</code> ：将指定大小的数据发送到已连接的主机。</li>
+<li><code>qint64 QIODevice::read(char *data, qint64 maxSize)</code> ：从连接中读取最多 maxSize 字节的数据。</li>
+<li><code>QByteArray QIODevice::readAll()</code> ：读取连接中的所有可用数据。</li>
 </ul>
 </li>
-<li>错误处理：<ul>
-<li><code>QAbstractSocket::SocketError error() const</code>：获取最后一次发生的错误。</li>
-<li><code>QString errorString() const</code>：获取描述错误的字符串。</li>
+<li>错误处理：
+<ul>
+<li><code>QAbstractSocket::SocketError error() const</code> ：获取最后一次发生的错误。</li>
+<li><code>QString errorString() const</code> ：获取描述错误的字符串。</li>
 </ul>
 </li>
-<li>信号和槽：<ul>
-<li><code>void QIODevice::readyRead()</code>：当有新的数据可用时发出的信号。</li>
-<li><code>void connected()</code>：当成功连接到主机时发出的信号。</li>
-<li><code>void disconnected()</code>：当与主机的连接断开时发出的信号。</li>
-<li><code>void error(QAbstractSocket::SocketError socketError)</code>：当出现错误时发出的信号。</li>
+<li>信号和槽：
+<ul>
+<li><code>void QIODevice::readyRead()</code> ：当有新的数据可用时发出的信号。</li>
+<li><code>void connected()</code> ：当成功连接到主机时发出的信号。</li>
+<li><code>void disconnected()</code> ：当与主机的连接断开时发出的信号。</li>
+<li><code>void error(QAbstractSocket::SocketError socketError)</code> ：当出现错误时发出的信号。</li>
 </ul>
 </li>
 </ol>
