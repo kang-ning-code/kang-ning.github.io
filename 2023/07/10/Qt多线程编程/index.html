@@ -5,13 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Qt多线程编程, 宁康同学">
-    <meta name="description" content="# Qt 多线程编程
-# 前言
+    <meta name="description" content="Qt多线程编程前言
 
-
-默认的线程在 Qt 中成为窗口线程，也叫主线程，负责处理窗口事件或者窗口控件数据的更新
+默认的线程在Qt中成为窗口线程，也叫主线程，负责处理窗口事件或者窗口控件数据的更新
 子线程负责后台的业务处理，子线程中不能对窗口对象做任何操作，这些事情需要交给窗口线程处理
-主线程和子线程之间如果要进">
+主线程和子线程之间如果要进行数据的传递，需要">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -588,40 +586,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="qt多线程编程"><a class="markdownIt-Anchor" href="#qt多线程编程">#</a> Qt 多线程编程</h1>
-<h2 id="前言"><a class="markdownIt-Anchor" href="#前言">#</a> 前言</h2>
-<blockquote>
+                <h1 id="Qt多线程编程"><a href="#Qt多线程编程" class="headerlink" title="Qt多线程编程"></a>Qt多线程编程</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
 <ul>
-<li>默认的线程在 Qt 中成为窗口线程，也叫主线程，负责处理窗口事件或者窗口控件数据的更新</li>
+<li>默认的线程在Qt中成为窗口线程，也叫主线程，负责处理窗口事件或者窗口控件数据的更新</li>
 <li>子线程负责后台的业务处理，子线程中不能对窗口对象做任何操作，这些事情需要交给窗口线程处理</li>
-<li>主线程和子线程之间如果要进行数据的传递，需要使用 Qt 中的信号机制</li>
+<li>主线程和子线程之间如果要进行数据的传递，需要使用Qt中的信号机制</li>
 <li></li>
 </ul>
 </blockquote>
-<h2 id="1线程类qthread"><a class="markdownIt-Anchor" href="#1线程类qthread">#</a> 1. 线程类 QThread</h2>
-<p><code>QThread</code>  类提供了以下一些常用的接口和方法：</p>
+<h2 id="1-线程类QThread"><a href="#1-线程类QThread" class="headerlink" title="1.线程类QThread"></a>1.线程类QThread</h2><p><code>QThread</code> 类提供了以下一些常用的接口和方法：</p>
 <ol>
-<li><code>QThread()</code> ：构造函数，用于创建一个新的  <code>QThread</code>  对象。</li>
-<li><code>void start()</code> ：启动线程。该方法会自动调用  <code>run()</code>  方法，在新的线程中执行指定的代码。</li>
-<li><code>void run()</code> ：<strong>线程的入口函数，需要在子类中重写。在该函数中，你可以编写需要在子线程中执行的代码逻辑</strong>。</li>
-<li><code>void quit()</code> ：终止线程的执行。该方法会发送一个终止信号给线程，通知线程退出。</li>
-<li><code>void wait()</code> ：等待线程结束。该方法会阻塞当前线程，直到被调用的线程执行完毕。</li>
-<li><code>bool isRunning() const</code> ：检查线程是否正在运行。返回  <code>true</code>  表示线程正在执行中，返回  <code>false</code>  表示线程已经停止。</li>
-<li><code>bool event(QEvent *event)</code> ：重写事件处理函数。你可以在子类中重写该函数，处理自定义的事件。</li>
-<li><code>void msleep(unsigned long msecs)</code> ：让线程休眠指定的毫秒数。</li>
-<li><code>void setPriority(Priority priority)</code> ; 设置线程优先级</li>
+<li><code>QThread()</code>：构造函数，用于创建一个新的 <code>QThread</code> 对象。</li>
+<li><code>void start()</code>：启动线程。该方法会自动调用 <code>run()</code> 方法，在新的线程中执行指定的代码。</li>
+<li><code>void run()</code>：<strong>线程的入口函数，需要在子类中重写。在该函数中，你可以编写需要在子线程中执行的代码逻辑</strong>。</li>
+<li><code>void quit()</code>：终止线程的执行。该方法会发送一个终止信号给线程，通知线程退出。</li>
+<li><code>void wait()</code>：等待线程结束。该方法会阻塞当前线程，直到被调用的线程执行完毕。</li>
+<li><code>bool isRunning() const</code>：检查线程是否正在运行。返回 <code>true</code> 表示线程正在执行中，返回 <code>false</code> 表示线程已经停止。</li>
+<li><code>bool event(QEvent *event)</code>：重写事件处理函数。你可以在子类中重写该函数，处理自定义的事件。</li>
+<li><code>void msleep(unsigned long msecs)</code>：让线程休眠指定的毫秒数。</li>
+<li><code>void setPriority(Priority priority)</code>;设置线程优先级</li>
 </ol>
-<p>除了上述方法， <code>QThread</code>  类还提供了一些信号，用于线程之间的通信：</p>
+<p>除了上述方法，<code>QThread</code> 类还提供了一些信号，用于线程之间的通信：</p>
 <ul>
-<li><code>void started()</code> ：线程开始执行时发出的信号。</li>
-<li><code>void finished()</code> ：线程执行结束时发出的信号。</li>
-<li><code>void terminated()</code> ：线程被终止时发出的信号，直接退出线程。</li>
+<li><code>void started()</code>：线程开始执行时发出的信号。</li>
+<li><code>void finished()</code>：线程执行结束时发出的信号。</li>
+<li><code>void terminated()</code>：线程被终止时发出的信号，直接退出线程。</li>
 </ul>
-<p>需要注意的是，在多线程编程中，<strong>Qt 推荐使用信号与槽机制进行线程间的通信，以确保线程安全。可以通过  <code>QObject::connect()</code>  方法将信号连接到槽函数，实现线程间的数据传递和操作。</strong></p>
-<p>此外，为了使用 Qt 的事件循环机制处理事件，你可以将  <code>QObject</code>  对象移动到子线程中，然后在子线程中创建和使用这些对象。这样，你就可以使用信号和槽、定时器、事件过滤器等 Qt 提供的功能。注意，使用这种方式时，你需要将  <code>QThread</code>  的对象作为父对象传递给  <code>QObject</code>  对象，以便在父对象销毁时自动销毁子线程。</p>
-<h2 id="2使用方式"><a class="markdownIt-Anchor" href="#2使用方式">#</a> 2. 使用方式</h2>
-<h3 id="21方式一"><a class="markdownIt-Anchor" href="#21方式一">#</a> 2.1 方式一</h3>
-
+<p>需要注意的是，在多线程编程中，<strong>Qt 推荐使用信号与槽机制进行线程间的通信，以确保线程安全。可以通过 <code>QObject::connect()</code> 方法将信号连接到槽函数，实现线程间的数据传递和操作。</strong></p>
+<p>此外，为了使用 Qt 的事件循环机制处理事件，你可以将 <code>QObject</code> 对象移动到子线程中，然后在子线程中创建和使用这些对象。这样，你就可以使用信号和槽、定时器、事件过滤器等 Qt 提供的功能。注意，使用这种方式时，你需要将 <code>QThread</code> 的对象作为父对象传递给 <code>QObject</code> 对象，以便在父对象销毁时自动销毁子线程。</p>
+<h2 id="2-使用方式"><a href="#2-使用方式" class="headerlink" title="2.使用方式"></a>2.使用方式</h2><h3 id="2-1方式一"><a href="#2-1方式一" class="headerlink" title="2.1方式一"></a>2.1方式一</h3>
                 
             </div>
             <hr/>
@@ -967,8 +960,8 @@
         $.getScript("/libs/valine/Valine.min.js", function () {
             new Valine({
                 el: '#vcomments',
-                appId: 'XVTTTNrslDGivM0PagA5CsXK-MdYXbMMI',
-                appKey: 'RjTS0oU7szyzeeoPTA0eZdQO',
+                appId: 'sEcOyk9uoVSkuwfK0I1A9tmU-gzGzoHsz',
+                appKey: 'nrhl0BJFpt4wmk02z2XtV2oY',
                 notify: 'false' === 'true',
                 verify: 'false' === 'true',
                 visitor: 'true' === 'true',

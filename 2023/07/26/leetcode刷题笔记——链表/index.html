@@ -7,8 +7,8 @@
     <meta name="keywords" content="leetcode刷题笔记——链表, 宁康同学">
     <meta name="description" content="206. 反转链表 - 力扣（LeetCode）
 题意：反转一个单链表。
-示例：输入: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL 输出: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL
-思路">
+示例: 输入: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL 输出: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL
+思">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -596,11 +596,12 @@
             <div id="articleContent">
                 <p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/reverse-linked-list/">206. 反转链表 - 力扣（LeetCode）</a></p>
 <p>题意：反转一个单链表。</p>
-<p>示例：输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL 输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</p>
-<p>思路 1：双指针法</p>
-<p><img src="../file/20210218090901207.png" alt="206_反转链表"></p>
+<p>示例: 输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL 输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</p>
+<p>思路1：双指针法</p>
+<p><img src="/../file/20210218090901207.png" alt="206_反转链表"></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        ListNode* temp; <span class="comment">// 保存cur的下一个节点</span></span><br><span class="line">        ListNode* cur = head;</span><br><span class="line">        ListNode* pre = <span class="literal">NULL</span>;</span><br><span class="line">        <span class="keyword">while</span>(cur) &#123;</span><br><span class="line">            temp = cur-&gt;next;  <span class="comment">// 保存一下 cur的下一个节点，因为接下来要改变cur-&gt;next</span></span><br><span class="line">            cur-&gt;next = pre; <span class="comment">// 翻转操作</span></span><br><span class="line">            <span class="comment">// 更新pre 和 cur指针</span></span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> pre;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>思路 2：递归法</p>
+
+<p>思路2：递归法</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">ListNode* <span class="title">reverse</span><span class="params">(ListNode* pre,ListNode* cur)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(cur == <span class="literal">NULL</span>) <span class="keyword">return</span> pre;</span><br><span class="line">        ListNode* temp = cur-&gt;next;</span><br><span class="line">        cur-&gt;next = pre;</span><br><span class="line">        <span class="comment">// 可以和双指针法的代码进行对比，如下递归的写法，其实就是做了这两步</span></span><br><span class="line">        <span class="comment">// pre = cur;</span></span><br><span class="line">        <span class="comment">// cur = temp;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">reverse</span>(cur,temp);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 和双指针法初始化是一样的逻辑</span></span><br><span class="line">        <span class="comment">// ListNode* cur = head;</span></span><br><span class="line">        <span class="comment">// ListNode* pre = NULL;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">reverse</span>(<span class="literal">NULL</span>, head);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
                 
             </div>
@@ -947,8 +948,8 @@
         $.getScript("/libs/valine/Valine.min.js", function () {
             new Valine({
                 el: '#vcomments',
-                appId: 'XVTTTNrslDGivM0PagA5CsXK-MdYXbMMI',
-                appKey: 'RjTS0oU7szyzeeoPTA0eZdQO',
+                appId: 'sEcOyk9uoVSkuwfK0I1A9tmU-gzGzoHsz',
+                appKey: 'nrhl0BJFpt4wmk02z2XtV2oY',
                 notify: 'false' === 'true',
                 verify: 'false' === 'true',
                 visitor: 'true' === 'true',
