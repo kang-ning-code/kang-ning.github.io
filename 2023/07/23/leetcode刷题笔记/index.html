@@ -5,13 +5,14 @@
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <meta name="keywords" content="leetcode刷题笔记——数组(螺旋数组), 宁康同学">
-    <meta name="description" content="螺旋数组1
+    <meta name="description" content="# 螺旋数组 1
+
 题目
 
 54. 螺旋矩阵 - 力扣
 给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。
 输入：matrix &amp;#x3D; [[1,2,3],[4,5,6],[7,8,9]]
-输出：[">
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -600,14 +601,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="螺旋数组1"><a href="#螺旋数组1" class="headerlink" title="螺旋数组1"></a>螺旋数组1</h4><ul>
+                <h4 id="螺旋数组1"><a class="markdownIt-Anchor" href="#螺旋数组1">#</a> 螺旋数组 1</h4>
+<ul>
 <li>题目</li>
 </ul>
 <p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/spiral-matrix/">54. 螺旋矩阵 - 力扣</a></p>
 <pre class="line-numbers language-none"><code class="language-none">给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。
 输入：matrix &#x3D; [[1,2,3],[4,5,6],[7,8,9]]
 输出：[1,2,3,6,9,8,7,4,5]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
 <ul>
 <li>思路</li>
 </ul>
@@ -682,25 +683,25 @@ public:
         return res;
     &#125;
 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<h1 id="螺旋数组2"><a href="#螺旋数组2" class="headerlink" title="螺旋数组2"></a>螺旋数组2</h1><h4 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h4><p>[59.螺旋矩阵](<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/spiral-matrix-ii/">59. 螺旋矩阵 II - 力扣（LeetCode）</a>)</p>
+<h1 id="螺旋数组2"><a class="markdownIt-Anchor" href="#螺旋数组2">#</a> 螺旋数组 2</h1>
+<h4 id="题目"><a class="markdownIt-Anchor" href="#题目">#</a> 题目</h4>
+<p>[59. 螺旋矩阵](<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/spiral-matrix-ii/">59. 螺旋矩阵 II - 力扣（LeetCode）</a>)</p>
 <pre class="line-numbers language-none"><code class="language-none">给定一个正整数 n，生成一个包含 1 到 n^2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。
 
 示例:
 
 输入: 3 输出: [ [ 1, 2, 3 ], [ 8, 9, 4 ], [ 7, 6, 5 ] ]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>[讲解视频](<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1SL4y1N7mV/?vd_source=46eba7e3f1bf0f7aedc00055d7f77195">一入循环深似海 | LeetCode：59.螺旋矩阵II_哔哩哔哩_bilibili</a>)</p>
-<h4 id="思路：循环不变量的规则，即所有的边界处理保持相同的规则"><a href="#思路：循环不变量的规则，即所有的边界处理保持相同的规则" class="headerlink" title="思路：循环不变量的规则，即所有的边界处理保持相同的规则"></a>思路：<strong>循环不变量的规则</strong>，即所有的边界处理保持相同的规则</h4><p>所以就是每条边界都是留下一个节点不处理，这样就比较好处理了</p>
+<p>[讲解视频](<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1SL4y1N7mV/?vd_source=46eba7e3f1bf0f7aedc00055d7f77195">一入循环深似海 | LeetCode：59. 螺旋矩阵 II_哔哩哔哩_bilibili</a>)</p>
+<h4 id="思路循环不变量的规则即所有的边界处理保持相同的规则"><a class="markdownIt-Anchor" href="#思路循环不变量的规则即所有的边界处理保持相同的规则">#</a> 思路：<strong>循环不变量的规则</strong>，即所有的边界处理保持相同的规则</h4>
+<p>所以就是每条边界都是留下一个节点不处理，这样就比较好处理了</p>
 <ul>
 <li>填充上行从左到右</li>
 <li>填充右列从上到下</li>
 <li>填充下行从右到左</li>
 <li>填充左列从下到上</li>
 </ul>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Solution &#123;
+<h4 id="代码实现"><a class="markdownIt-Anchor" href="#代码实现">#</a> 代码实现</h4>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Solution &#123;
 public:
     vector&lt;vector&lt;int&gt;&gt; generateMatrix(int n) &#123;
         int startx&#x3D;0;&#x2F;&#x2F;x起始位置
@@ -740,7 +741,6 @@ public:
 
     &#125;
 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>变式题</p>
 <p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/">剑指 Offer 29. 顺时针打印矩阵 - 力扣（LeetCode）</a></p>
 

@@ -5,22 +5,26 @@
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <meta name="keywords" content="计算视觉SLAM——引言, 宁康同学">
-    <meta name="description" content="计算视觉SLAM——引言一、学习架构第一部分：数学基础
+    <meta name="description" content="# 计算视觉 SLAM—— 引言
+# 一、学习架构
+第一部分：数学基础
 
 
-概述Linux
+
+概述 Linux
+
 
 三维空间刚体运动表述 Eigen
 
+
 李群与李代数 Sophus
+
 
 相机模型与图像 OpenCV
 
+
 非线性优化 Ceres，g2o
 
-
-
-第二部分：视觉SLAM
 
 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -602,22 +606,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="计算视觉SLAM——引言"><a href="#计算视觉SLAM——引言" class="headerlink" title="计算视觉SLAM——引言"></a>计算视觉SLAM——引言</h1><h2 id="一、学习架构"><a href="#一、学习架构" class="headerlink" title="一、学习架构"></a>一、学习架构</h2><p>第一部分：数学基础</p>
+                <h1 id="计算视觉slam引言"><a class="markdownIt-Anchor" href="#计算视觉slam引言">#</a> 计算视觉 SLAM—— 引言</h1>
+<h2 id="一-学习架构"><a class="markdownIt-Anchor" href="#一-学习架构">#</a> 一、学习架构</h2>
+<p>第一部分：数学基础</p>
 <blockquote>
 <ul>
-<li><p>概述Linux</p>
+<li>
+<p>概述 Linux</p>
 </li>
-<li><p>三维空间刚体运动表述 Eigen</p>
+<li>
+<p>三维空间刚体运动表述 Eigen</p>
 </li>
-<li><p>李群与李代数 Sophus</p>
+<li>
+<p>李群与李代数 Sophus</p>
 </li>
-<li><p>相机模型与图像 OpenCV</p>
+<li>
+<p>相机模型与图像 OpenCV</p>
 </li>
-<li><p>非线性优化 Ceres，g2o</p>
+<li>
+<p>非线性优化 Ceres，g2o</p>
 </li>
 </ul>
 </blockquote>
-<p>第二部分：视觉SLAM</p>
+<p>第二部分：视觉 SLAM</p>
 <blockquote>
 <ul>
 <li>视觉里程计 OpenCV</li>
@@ -628,22 +639,23 @@
 </blockquote>
 <p>第三部分：其他知识</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/gaoxiang12/slambook">代码</a></p>
-<h2 id="二、初识SLAM"><a href="#二、初识SLAM" class="headerlink" title="二、初识SLAM"></a>二、初识SLAM</h2><h3 id="1、相机分类"><a href="#1、相机分类" class="headerlink" title="1、相机分类"></a>1、相机分类</h3><p>（1）单目相机：没有深度，必须通过移动相机产生深度，近处物体移动较快，远处物体移动较慢（计算量非常大）</p>
+<h2 id="二-初识slam"><a class="markdownIt-Anchor" href="#二-初识slam">#</a> 二、初识 SLAM</h2>
+<h3 id="1-相机分类"><a class="markdownIt-Anchor" href="#1-相机分类">#</a> 1、相机分类</h3>
+<p>（1）单目相机：没有深度，必须通过移动相机产生深度，近处物体移动较快，远处物体移动较慢（计算量非常大）</p>
 <p>（2）双目相机：通过视觉差计算深度</p>
-<p>（3）RGB相机：通过物理方法测量深度</p>
-<h3 id="2、视觉SLAM流程图"><a href="#2、视觉SLAM流程图" class="headerlink" title="2、视觉SLAM流程图"></a>2、视觉SLAM流程图</h3><pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid"><span class="token keyword">graph</span> LR
+<p>（3）RGB 相机：通过物理方法测量深度</p>
+<h3 id="2-视觉slam流程图"><a class="markdownIt-Anchor" href="#2-视觉slam流程图">#</a> 2、视觉 SLAM 流程图</h3>
+<pre class="line-numbers language-mermaid" data-language="mermaid"><code class="language-mermaid"><span class="token keyword">graph</span> LR
     Start<span class="token text string">(传感器数据)</span> <span class="token arrow operator">--></span> Qian<span class="token text string">[前端 里程设计]</span>
     Qian <span class="token arrow operator">--></span> Hou<span class="token text string">(后端 非线性优化)</span>
     Hou<span class="token arrow operator">--></span>Jian<span class="token text string">[建图]</span>
     Start <span class="token arrow operator">--></span> Hui<span class="token text string">[回环检测]</span>
     Hui <span class="token arrow operator">--></span> Hou
   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
 <blockquote>
 <ul>
-<li>视觉里程计Visual Odometry<ul>
+<li>视觉里程计 Visual Odometry
+<ul>
 <li>相邻图像估计相机运动</li>
 <li>基本形式：通过两张图像计算运动和结构</li>
 <li>不可避免地有漂移</li>
@@ -653,7 +665,8 @@
 </blockquote>
 <blockquote>
 <ul>
-<li>方法<ul>
+<li>方法
+<ul>
 <li>特征点法</li>
 <li>直接法</li>
 </ul>
@@ -662,17 +675,19 @@
 </blockquote>
 <blockquote>
 <ul>
-<li>后端优化<ul>
+<li>后端优化
+<ul>
 <li>从带有噪声的数据中优化轨迹和地图 状态估计问题</li>
 <li>最大后验概率估计 MAP</li>
-<li>前期以EKF为代表，现在以<strong>图优化</strong>为代表</li>
+<li>前期以 EKF 为代表，现在以<strong>图优化</strong>为代表</li>
 </ul>
 </li>
 </ul>
 </blockquote>
 <blockquote>
 <ul>
-<li>回环检测<ul>
+<li>回环检测
+<ul>
 <li>检测机器人是否回到早先位置</li>
 <li>识别到达过的场景</li>
 <li>计算图像间的相似性</li>
@@ -682,30 +697,46 @@
 </blockquote>
 <blockquote>
 <ul>
-<li>建图<ul>
+<li>建图
+<ul>
 <li>用于导航、规划、通讯、可视化、交互等</li>
-<li>度量地图vs拓扑地图</li>
-<li>稀疏地图vs稠密地图</li>
+<li>度量地图 vs 拓扑地图</li>
+<li>稀疏地图 vs 稠密地图</li>
 </ul>
 </li>
 </ul>
 </blockquote>
-<h3 id="3、SLAM问题的数学描述"><a href="#3、SLAM问题的数学描述" class="headerlink" title="3、SLAM问题的数学描述"></a>3、SLAM问题的数学描述</h3><ul>
-<li><p>离散时间：<br>$$<br>t&#x3D;1,2,…,k<br>$$</p>
+<h3 id="3-slam问题的数学描述"><a class="markdownIt-Anchor" href="#3-slam问题的数学描述">#</a> 3、SLAM 问题的数学描述</h3>
+<ul>
+<li>
+<p>离散时间：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">t=1,2,...,k
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span></span></p>
 </li>
-<li><p>位置：</p>
+<li>
+<p>位置：</p>
 </li>
-<li><p>$$<br>x_1,x_2,…,x_k<br>$$</p>
-<p>运动方程：<br>$$<br>x_k&#x3D; f(x_{k-1},u_k,w_k)<br>$$<br>其中u_k表示输入，w_k表示噪声</p>
+<li>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>x</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">x_1,x_2,...,x_k
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<p>运动方程：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><msub><mi>u</mi><mi>k</mi></msub><mo separator="true">,</mo><msub><mi>w</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x_k= f(x_{k-1},u_k,w_k)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中 u_k 表示输入，w_k 表示噪声</p>
 </li>
 </ul>
-<h4 id="两个基本方程"><a href="#两个基本方程" class="headerlink" title="两个基本方程"></a>两个基本方程</h4><h5 id="运动方程"><a href="#运动方程" class="headerlink" title="运动方程"></a>运动方程</h5><p>$$<br>x_k &#x3D; f(x_{k-1},u_k,w_k)<br>$$</p>
-<h5 id="观测方程"><a href="#观测方程" class="headerlink" title="观测方程"></a>观测方程</h5><p>$$<br>z_{k,j}&#x3D;h(y_j,x_k,v_{k,j})<br>$$</p>
+<h4 id="两个基本方程"><a class="markdownIt-Anchor" href="#两个基本方程">#</a> 两个基本方程</h4>
+<h5 id="运动方程"><a class="markdownIt-Anchor" href="#运动方程">#</a> 运动方程</h5>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mi>k</mi></msub><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><msub><mi>u</mi><mi>k</mi></msub><mo separator="true">,</mo><msub><mi>w</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x_k = f(x_{k-1},u_k,w_k)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<h5 id="观测方程"><a class="markdownIt-Anchor" href="#观测方程">#</a> 观测方程</h5>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>z</mi><mrow><mi>k</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo>=</mo><mi>h</mi><mo stretchy="false">(</mo><msub><mi>y</mi><mi>j</mi></msub><mo separator="true">,</mo><msub><mi>x</mi><mi>k</mi></msub><mo separator="true">,</mo><msub><mi>v</mi><mrow><mi>k</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">z_{k,j}=h(y_j,x_k,v_{k,j})
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.04398em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord mathnormal">h</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
 <p>思考：</p>
 <ul>
 <li>位置是三维的，如何表述？</li>
 <li>观测是相机中的像素点，如何表述？</li>
-<li>已知u,z时，如何推断x,y？</li>
+<li>已知 u,z 时，如何推断 x,y？</li>
 </ul>
 
                 
