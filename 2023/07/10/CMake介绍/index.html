@@ -5,18 +5,20 @@
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     <meta name="keywords" content="CMake, 宁康同学">
-    <meta name="description" content="一、CMake 概述
-二、Cmake 的使用
+    <meta name="description" content="一、CMake概述
+二、Cmake的使用
 1、注释
 （1）行注释
 #这是一个注释
+
 （2）段注释
 #[[这是一个段注释
 CMakeLists.tst
 CMakeLists.tst
 ]]
-2、添加 CMakeLists.txt 文件
-文件内">
+
+2、添加CMakeLists.txt文件
+文件内容如">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -89,7 +91,7 @@ CMakeLists.tst
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Tags" class="waves-effect waves-light">
+    <a href="/tags" class="waves-effect waves-light">
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
@@ -100,7 +102,7 @@ CMakeLists.tst
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Categories" class="waves-effect waves-light">
+    <a href="/categories" class="waves-effect waves-light">
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
@@ -287,7 +289,7 @@ CMakeLists.tst
         
         <li class="m-nav-item">
 	  
-		<a href="/Tags" class="waves-effect waves-light">
+		<a href="/tags" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
@@ -298,7 +300,7 @@ CMakeLists.tst
         
         <li class="m-nav-item">
 	  
-		<a href="/Categories" class="waves-effect waves-light">
+		<a href="/categories" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-bookmark"></i>
 			
@@ -605,44 +607,53 @@ CMakeLists.tst
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、CMake 概述</p>
-<p>二、Cmake 的使用</p>
+                <p>一、CMake概述</p>
+<p>二、Cmake的使用</p>
 <p>1、注释</p>
 <p>（1）行注释</p>
 <pre class="line-numbers language-none"><code class="language-none">#这是一个注释<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <p>（2）段注释</p>
 <pre class="line-numbers language-cmake" data-language="cmake"><code class="language-cmake"><span class="token comment">#[[这是一个段注释</span>
 CMakeLists.tst
 CMakeLists.tst
 ]]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>2、添加 CMakeLists.txt 文件</p>
+
+<p>2、添加CMakeLists.txt文件</p>
 <p>文件内容如下</p>
 <pre class="line-numbers language-none"><code class="language-none">cmake_mininum_required(VERSION 3.0)#指定使用的cmake最低版本
 project(CALC)#定义工程名称，并指定可用的版本、工程描述、web主页地址、支持的语言，如果不需要的这些都可以需略，只要写出工程名就行
 add_executable(可执行程序名 源文件名称)#定义工程会生成一个可执行程序，源文件名可以是多个，用空格或者;间隔<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>3、执行 CMake 命令</p>
+
+<p>3、执行CMake命令</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cmake 
 cmake CMakeLists.txt文件路径
 <span class="token function">make</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>4、set 的使用</p>
-<p>(1) 定义变量的名字</p>
+
+<p>4、set的使用</p>
+<p>(1)定义变量的名字</p>
 <pre class="line-numbers language-cmake" data-language="cmake"><code class="language-cmake"><span class="token comment">#SET 指令语法</span>
 <span class="token comment">#  []中的参数为可选择项，</span>
 <span class="token function">SET</span><span class="token punctuation">(</span>VAR [<span class="token property">VALUE</span>] [<span class="token variable">CACHE</span> <span class="token property">TYPE</span> DOCSTRING []]<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>(2) 指定使用的 C++ 标准</p>
+
+<p>(2)指定使用的C++标准</p>
 <pre class="line-numbers language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_CXX_STANDARD</span> <span class="token number">11</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>(3) 指定输出的路径</p>
+
+<p>(3)指定输出的路径</p>
 <pre class="line-numbers language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">set</span><span class="token punctuation">(</span>HOME /home/robin/Linux/Sort<span class="token punctuation">)</span>
 <span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">EXECUTABLE_OUTPUT_PATH</span> <span class="token punctuation">$&#123;</span>HOME<span class="token punctuation">&#125;</span>/bin<span class="token punctuation">)</span>
 <span class="token comment"># $&#123; &#125;表示取出变量的值</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
 <p>5、搜索文件</p>
 <p>（1）aux_source_directory</p>
 <pre class="line-numbers language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">aux_source_directory</span><span class="token punctuation">(</span>&lt;dir<span class="token punctuation">></span> &lt;variable<span class="token punctuation">></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <pre><code>- dir:要搜索的目录
 - variable：需要存储的变量
 </code></pre>
 <p>（2）file</p>
 <pre class="line-numbers language-cmake" data-language="cmake"><code class="language-cmake"><span class="token keyword">file</span><span class="token punctuation">(</span>GLOB/GLOB_RECURSE 变量名 要搜索的文件路径和文件类型<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 
                 
             </div>
@@ -1286,7 +1297,7 @@ cmake CMakeLists.txt文件路径
 
 
 
-    <a href="1533935920" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1533935920" data-position="top" data-delay="50">
+    <a href="https://github.com/kang-ning-code/kang-ning-code.github.io/blob/main/img/qq.jpg" class="tooltipped" target="_blank" data-tooltip="QQ联系我: https://github.com/kang-ning-code/kang-ning-code.github.io/blob/main/img/qq.jpg" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
